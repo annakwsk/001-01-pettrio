@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'アンケート'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+      <%- include("../_header"); %>
+      <div class="p-ank">
+        <div class="p-ank__inner">
+          <div class="m-block-metro__text">ご回答ありがとうございました！</div>
+          <div class="m-block-metro">
+            <img class="m-block-metro__image" src="../assets/images/icon-metro-bl.svg" alt="" />
+          </div>
+
+          <div class="p-ank__bottom">
+            <div class="p-ank__bottom__text">『地下謎への招待状 2025』の<br />すべての謎を解き明かしたことを、<br />ぜひシェアしておくれ！<br />みなで地下謎を盛り上げようぞ！</div>
+            <div class="p-ending-share__hash">#地下謎</div>
+            <ul class="p-ending-share__list">
+              <li>
+                <a
+                  href="https://twitter.com/intent/tweet?text=%EF%BC%BC%20%E5%9C%B0%E4%B8%8B%E8%AC%8E%E3%81%B8%E3%81%AE%E6%8B%9B%E5%BE%85%E7%8A%B6%202025%EF%BC%8F%0D%0A%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AE%E8%AC%8E%E3%82%92%E8%A7%A3%E3%81%8D%E6%98%8E%E3%81%8B%E3%81%97%E3%81%9F%F0%9F%9A%87%0D%0A%0D%0A%E6%9D%B1%E4%BA%AC%E3%81%AB%E3%81%AF%E3%81%84%E3%81%8F%E3%81%A4%E3%82%82%E3%81%AE%E9%A1%94%E3%81%A8%E3%80%81%E8%AC%8E%E3%81%8C%E3%81%82%E3%82%8B%E3%80%82 https://realdgame.jp/s/chikanazo2025/?utm_source=twitter&utm_medium=social&utm_campaign=share_chikanazo2025&hashtags=地下謎"
+                  target="_blank"
+                  ><img src="../assets/images/ending/icon-x.svg" alt="X"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="http://line.me/R/msg/text/?%EF%BC%BC%20%E5%9C%B0%E4%B8%8B%E8%AC%8E%E3%81%B8%E3%81%AE%E6%8B%9B%E5%BE%85%E7%8A%B6%202025%EF%BC%8F%0D%0A%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AE%E8%AC%8E%E3%82%92%E8%A7%A3%E3%81%8D%E6%98%8E%E3%81%8B%E3%81%97%E3%81%9F%F0%9F%9A%87%0D%0A%0D%0A%E6%9D%B1%E4%BA%AC%E3%81%AB%E3%81%AF%E3%81%84%E3%81%8F%E3%81%A4%E3%82%82%E3%81%AE%E9%A1%94%E3%81%A8%E3%80%81%E8%AC%8E%E3%81%8C%E3%81%82%E3%82%8B%E3%80%82 https://realdgame.jp/s/chikanazo2025/?utm_source=line&utm_medium=social&utm_campaign=after_chikanazo&hashtags=地下謎"
+                  target="_blank"
+                  ><img src="../assets/images/ending/icon-line.svg" alt="line"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://realdgame.jp/s/chikanazo2025/?utm_source=facebook&utm_medium=social&utm_campaign=after_chikanazo" target="_blank"
+                  ><img src="../assets/images/ending/icon-facebook.svg" alt="Facebook"
+                /></a>
+              </li>
+              <li class="js-postig">
+                <img src="../assets/images/ending/icon-insta.svg" alt="instagram" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="o-footer"><%- include("../_footer"); %></footer>
+    </div>
+  </body>
+</html>

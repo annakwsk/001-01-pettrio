@@ -1,0 +1,32 @@
+@use "../shitaji" as *;
+
+@mixin heading() {
+  text-align: center;
+
+  .a-heading__en {
+    @include fz(28, 32, 0.03);
+  }
+}
+
+.a-heading--type1 {
+  @include heading();
+
+  margin-bottom: 16px;
+}
+
+.a-heading--type2 {
+  @include heading();
+
+  margin-bottom: 32px;
+}
+
+.a-heading--type3 {
+  @include fz(20, 24, 0.05);
+
+  text-align: center;
+}
+
+
+.a-heading__ja {
+
+}

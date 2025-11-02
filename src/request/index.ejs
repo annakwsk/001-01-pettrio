@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'リクエスト'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper t-layout">
+        <div class="t-layout__inner">
+      <%- include("../_header"); %>
+      <div class="t-layout__content">
+
+        <!-- heading -->
+       <div class="t-layout__heading">
+        <a href=""><i></i>
+        </a>
+        <div class="t-layout__heading-title">条件リクエスト</div>
+       </div>
+ <!-- /heading -->
+  
+       <main class="p-request">
+        <div class="p-request__progress">
+            <div class="p-request__progress-caption">10%完了</div>
+        <progress max="100" value="10"></progress>
+    </div>
+    <div class="p-request__main">
+            <div class="p-request__title">犬種検索</div>
+            <ul class="p-request__checkbox">
+              <li>
+                <label><input type="checkbox" name="犬種検索-1" value="初めての方にオススメ" class="js-checkbox-01" />初めての方にオススメ</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="犬種検索-2" value="マンションで飼うなら" class="js-checkbox-01" />マンションで飼うなら</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="犬種検索-3" value="子供になつきやすい" class="js-checkbox-01" />子供になつきやすい</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="犬種検索-4" value="ブサカワ" class="js-checkbox-01" />ブサカワ</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="2犬種検索-5" value="運動量少な目" class="js-checkbox-01" />運動量少な目</label>
+              </li>
+            </ul>
+    </div>
+    <div class="p-request__button">
+    <div class="a-button--type1 p-request__next">
+        <a href="index-02.html">
+            次へ
+        </a>
+    </div>
+</div>
+</main>
+      </div>
+      <%- include("../_footer"); %>
+    </div>
+</div>
+  </body>
+</html>

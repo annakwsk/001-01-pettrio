@@ -1,0 +1,63 @@
+@use "variables" as *;
+
+.o-footer-share,
+.p-top-intro__button,
+.p-top-howto__slider li:not(:first-child)::before,
+.p-top-hero__deco-03,
+.p-top-hero__deco-04,
+.p-top-hero__deco-05,
+.p-top-read__text,
+.p-top-read__metro,
+.ticketWrap .naviBox .nextBtn,
+.ticketWrap .naviBox .prevBtn,
+.p-top-ticketinfo__button,
+.p-top-read__block-01,
+.p-top-read__block-02,
+.p-top-read__block-03 {
+  z-index: 1 !important;
+}
+
+.o-footer-action {
+  z-index: 2;
+}
+
+.o-header {
+  z-index: 3;
+}
+
+.o-nav__body.is-active,
+.o-footer-share__bg {
+  z-index: 8;
+}
+
+.o-nav__button,
+.o-footer-share__inner,
+.o-footer-share {
+  z-index: 10;
+}
+
+.p-top-catch__block::before,
+.p-top-hero__deco-01,
+.p-top-hero__image::before,
+.p-top-hero__image::after {
+  z-index: 0;
+}
+
+.p-top-howto__slider ul,
+.p-top-howto__slider li,
+.p-top-read__deco-01,
+.p-top-read__deco-02,
+.p-top-read__deco-03,
+.p-top-read__deco-04,
+.p-top-read__deco-05,
+.p-top-read__deco-06,
+.p-top-read__deco-07,
+.p-top-read__deco-08,
+.p-top-read__deco-09,
+.p-top-read__deco-10,
+.p-top-read__deco-11,
+.p-top-read__deco-12,
+.p-top-read__deco-13,
+.p-top-read__deco-14 {
+  z-index: -1;
+}

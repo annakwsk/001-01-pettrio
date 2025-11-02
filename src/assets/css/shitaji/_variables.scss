@@ -1,0 +1,41 @@
+/* Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+//
+// Color system
+*/
+
+@use "sass:math";
+
+$white: #ffffff;
+$black: #424242;
+$black-2: #1D1D1D;
+$gray: #333333;
+$gray-2: #4F4F4F;
+$gray-3: #828282;
+$gray-4: #BDBDBD;
+$gray-5: #E0E0E0;
+$gray-6: #F6F6F6;
+
+$yellow:#F9DB00;
+$yellow-2:#A89926;
+$yellow-3:#FFFFF8;
+
+$green:#68C1B0;
+
+
+
+$windowHeight: 100vh;
+
+@custom-media --md (max-width: 768px);
+@custom-media --lg (min-width: 769px);
+@custom-media --lg-only (--lg) and (max-width: 1279px);
+@custom-media --xl (min-width: 1280px);
+
+$font-primary: "Zen Kaku Gothic New", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+$font-secondary: "zenmaru", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+$easing-default: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);

@@ -1,0 +1,41 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.o-form__heading {
+  @include zenkaku(700);
+
+  margin-bottom: 8px;
+}
+
+.o-form__item {
+  @include fz(14, 20, 0.05);
+
+  + .o-form__item {
+    margin-top: 16px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid $gray-5;
+    background-color: $gray-6;
+    border-radius: 4px;
+  }
+
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid $gray-5;
+    background-color: $gray-6;
+    border-radius: 4px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid $gray-5;
+    background-color: $gray-6;
+    border-radius: 4px;
+  }
+}

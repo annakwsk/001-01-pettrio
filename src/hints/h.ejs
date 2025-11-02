@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'ヒント'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+      <%- include("../_header"); %>
+      <div class="p-hints">
+        <div>
+          <div class="a-heading--type1 p-hints__heading">
+            <div class="a-heading__en">Hints</div>
+          </div>
+
+          <div class="m-block-metro">
+            <img class="m-block-metro__image" src="../assets/images/icon-metro-bl.svg" alt="" />
+            <div class="m-block-metro__text">「地下謎への招待状」<br />ヒントページじゃ。<br />どうしてもわからないときに<br />見るとよいぞ。</div>
+          </div>
+
+          <section class="p-hints-section">
+            <div class="p-hints-section__heading">
+              <div class="p-hints-section__title-hajimeni">
+                <span>
+                  <img class="" src="../assets/images/hints/h-hajimeni.svg" alt="はじめに" />
+                </span>
+              </div>
+            </div>
+            <input id="hints-intro" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+            <label class="p-hints-section__label o-accordion__label" for="hints-intro"><i></i>まず何をしたらいい？</label>
+            <div class="o-accordion__content p-hints-section__content">
+              <p>スタートガイド2、3pの「『地下謎への招待状』の楽しみ方」と裏表紙の「注意事項」を読みましょう。その後、4pの1st Missionを解き始めましょう。</p>
+            </div>
+          </section>
+
+          <!-- 第1章 -->
+          <section class="p-hints-section">
+            <div class="p-hints-section__heading">
+              <div class="p-hints-section__title-01">
+                <span>
+                  <img class="" src="../assets/images/hints/h-01.svg" alt="1st Mission" />
+                </span>
+              </div>
+            </div>
+
+            <ul class="p-hints-section__list">
+              <li>
+                <input id="hints-1st-start-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-start-01"><i></i>スタートの謎 ヒント</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>「びる」が「びーる」、「はと」が「はーと」になっています。「ちず」は何になるでしょうか？</p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-start-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-start-02"><i></i>スタートの謎 答え</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>
+                    左のイラストの名前の真ん中に「ー」を入れることで、右のイラストの名前に変化するようです。従って、答えは「チーズ」です。<br />
+                    次は「チーズ」の謎を解きましょう。
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-02-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-02-01"><i></i>2問目の謎 ヒントその1</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>路線図で駅名を調べましょう。すべての駅に、それぞれアルファベットと数字が割り振られています。Ｇ１３とＨ１９は何という名前の駅でしょうか？</p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-02-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-02-02"><i></i>2問目の謎 ヒントその2</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>
+                    「Ｇ１３」は「神田（かんだ）」、「Ｈ１９」は「入谷（いりや）」です。どちらもひらがな3文字です。<br />
+                    「やかん」を示す矢印は「Ｈ１９」の3文字目である「９」と、「Ｇ１３」の1、2文字目である「Ｇ１」を通っています。
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-02-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-02-03"><i></i>2問目の謎 ヒントその3</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>「Ｇ１３」の3文字を「かんだ」、「Ｈ１９」の3文字を「いりや」に変換して、矢印をたどってみましょう。</p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-02-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-02-answer"><i></i>2問目の謎 答え</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>
+                    「Ｇ１３」の3文字を「かんだ」、「Ｈ１９」の3文字を「いりや」に変換して、「やかん」を示す矢印の通った場所を読むと、「いりや」の「や」、「かんだ」の「かん」をつなげて「やかん」と読めることに気付きます。<br />
+                    同じようにして、？を示す矢印の通った場所を読むと、「かんだ」の「だ」、「いりや」の「い」をつなげて「だい」と読めます。答えは「台（だい）」です。<br />
+                    次は「台」の謎を解きましょう。
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-03-start" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-03-start"
+                  ><i></i>3問目の謎<br class="hidden-lg" />
+                  解くべき謎がわからない</label
+                >
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>2問目の謎の答えである「だい」の謎を解きましょう。「だい」の謎は6pにあります。</p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-03-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-03-01"><i></i>3問目の謎 ヒント</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>小さい紙を取り出して、「が ちょう」と「ぞう きん」を作るように置きましょう。</p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-03-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-03-answer"><i></i>3問目の謎 答え</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>
+                    「が」と「ちょう」、「ぞう」と「きん」が並ぶように、小さい紙を置きましょう。そのあと、矢印の先を読みます。答えは「さんかんおう」です。<br />
+                    次は「さんかんおう」の謎を解きましょう。
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-04-start" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-04-start"><i></i>4問目の謎 <br class="hidden-lg" />解くべき謎がわからない</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>3問目の答えが「さんかんおう」なので次は「さんかんおう」の謎を解きましょう。「さんかんおう」のイラストはないので、「さん」と「かん」と「おう」の謎を組み合わせて解きましょう。</p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-04-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-04-01"><i></i>4問目の謎 ヒント</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>「こう」と読む８種類の漢字は、高、公、好、甲、行、光、校、攻です。これらの隣の文字を読みましょう。</p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-04-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-04-answer"><i></i>4問目の謎 答え</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>「こう」と読む漢字の隣を読むと、「この謎の答えはとけいだい」となります。答えは「とけいだい」です。</p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-05-start" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-05-start"><i></i>5問目の謎 <br class="hidden-lg" />解くべき謎がわからない</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>4問目の答えが「とけいだい」なので次は「とけいだい」の謎を解きましょう。「とけいだい」のイラストはないので、「とけい」と「だい」の謎を組み合わせて解きましょう。</p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-05-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-05-01"><i></i>5問目の謎 ヒントその1</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>
+                    「蔵」「火」「力士」「酢」は小さい紙に描かれています。「蔵」から順に小さい紙を折って作っていきましょう。「酢」まで折れたら「開始切れ」の通り、開始と書かれた線で紙を切りましょう。
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-05-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-05-02"><i></i>5問目の謎 ヒントその2</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>切った紙を開くと、図のようになります。この紙を使ってもう一度「だい」の謎を解きましょう。さっきとは違う答えが出てくるはずです。</p>
+                  <p>
+                    <img class="" src="../assets/images/hints/hints-1st-05-02.png" alt="" />
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input id="hints-1st-05-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                <label class="p-hints-section__label o-accordion__label" for="hints-1st-05-answer"><i></i>5問目の謎 答え</label>
+                <div class="o-accordion__content p-hints-section__content">
+                  <p>答えは「しけんかんとく」です。この答えをゲームサイトに入力しましょう。</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- /第1章 -->
+
+          <!-- 第2章 -->
+          <section class="p-hints-section">
+            <div class="p-hints-section__heading">
+              <div class="p-hints-section__title-02">
+                <span>
+                  <img class="" src="../assets/images/hints/h-02.svg" alt="2nd Mission" />
+                </span>
+              </div>
+            </div>
+
+            <!-- 7pの駅の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading p07">7pの駅の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-2nd-p7-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p7-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      まずは、たどり着いたお寺の中で①〜⑦が表すものを実際に探索して見つけましょう。<br />
+                      入って左側にある鳥居の先には何もありません。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p7-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p7-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      お寺を探索すると、<br />
+                      ①せいちょう<br />
+                      ②てんねん<br />
+                      ③きねんぶつ<br />
+                      ④おせんだんご<br />
+                      ⑤だいこくてん<br />
+                      ⑥ほうのう<br />
+                      ⑦つる<br />
+                      とわかります。
+                    </p>
+                    <p>それぞれの言葉を右のマスにうめましょう。6マス続いて並んでいるところが2箇所あります。そのどちらかに「おせんだんご」、もう1つに「だいこくてん」と入ります。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p7-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p7-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      9pのマスを途中まで埋めると、図のようになります。<br />
+                      埋まった文字をヒントに他の言葉や⑧〜⑫を考えましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p7-03.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p7-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p7-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>⑩の方向は、上下左右のどれかです。⑫の宝石は、赤色の宝石です。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p7-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p7-05"><i></i>ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      ①〜⑫のカギを9pのマスに埋めると、図のようになります。<br />
+                      指定されたマスを拾うと、「このえきとこのたびでよめ　ぞうしだのき」と読むことができます。ここから、4文字の答えを導きましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p7-05.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p7-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p7-06"><i></i>ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>この駅とは「雑司ヶ谷」駅のことで、この旅とは「駄菓子」旅のことです。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p7-07" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p7-07"><i></i>ヒントその7</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「ぞうしがや」「だがし」……。どちらも名前の途中に「が」が含まれています。<br />
+                      この2つの名前を使って「ぞうしだのき」という言葉を、別の言葉に変換できないでしょうか？
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p7-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p7-answer"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「ぞうしだのき」の、「ぞうし」が「や」、「だ」が「し」になるように読むことで答えがわかります。<br />
+                      「ぞうし→や、だ→し、のき」で答えは「やしのき」です。
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /7pの駅の謎 -->
+
+            <!-- 11p～の駅の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading p11">11pの駅の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-2nd-p11-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p11-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      STEP1の指示に従って4つのお店を探して、そのお店で扱っているものを確認しましょう。<br />
+                      各お店の看板に注目すると見つけやすいでしょう。このとき、4つ目の横断歩道の先へ進む必要はありません。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p11-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p11-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「創業60」と書かれた石山製作所で扱っているものは「看板」<br />
+                      「銅源」と書かれた銅源サイトウで扱っているものは「銅鍋」<br />
+                      「三ツ星」と書かれた三ツ星食器で扱っているものは「食器」<br />
+                      「窯」の看板がある川崎商店で扱っているものは「食パン型」です。
+                    </p>
+                    <p>それぞれの写真と、扱っているものを線でつないだら、STEP2に進みましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p11-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p11-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      まずはSTEP2の上の文に従って公園に移動して謎を解きましょう。<br />
+                      次にSTEP1で線が通った文字を枠に埋めて、リストが表す「画家」「大工」「コック」「医者」が使う4つの道具を盤面から探して塗りつぶしましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p11-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p11-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>画家が使う道具は色を塗るために使い、医者が使う道具は音を聞くために使います。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p11-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p11-05"><i></i>ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「えのぐ」「のこぎり」「ほうちょう」「ちょうしんき」の4つの道具を塗りつぶすと、「ふたつのおさらのあいだをうえからよめ」という指示が現れます。この指示に従って、4文字の答えを導きましょう。<br />
+                      12pに2つのお皿が存在しています。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p11-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p11-answer"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>2つのお皿とは、12pにある白いお皿とかっぱの頭のお皿のことでした。この2つの間を上から読むと、答えは「かんぱい」です。</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /11p～の駅の謎 -->
+
+            <!-- 15p～の駅の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading p15">15pの駅の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-2nd-p15-st1-teama01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st1-teama01"><i></i>STEP1 チームA ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      指示に従って歩き、見つけたものをひらがなで書き込んでいきましょう。<br />
+                      まず、鳥居をくぐらずにその手前右側にある「富岡八幡宮」と書かれた石碑を見ましょう。「岡」の漢字の点々の部分を見ると、「バツ」の形になっています。<br />
+                      1の空欄に「ばつ」と書き込んで、次の指示に進みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st1-teama02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st1-teama02"><i></i>チームA ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      指示の通りに進むと、黒い看板に書かれた「東京十社巡り」が見つかります。<br />
+                      「〇戸天神社」に当てはまる神社は「亀戸天神社」です。<br />
+                      2の空欄に「かめ」と書き込んで、次の指示に進みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st1-teama03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st1-teama03"><i></i>チームA ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      指示通りの石碑をみると、「大関力士碑」と書かれています。<br />
+                      3の空欄に「りきし」と書き込んで、次の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st1-teama04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st1-teama04"><i></i>チームA ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      そのまま、指示通りに進みましょう。すると、大きな馬の銅像が見つかります。<br />
+                      4の空欄に「うま」と書き込んで、次の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st1-teamb01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st1-teamb01"><i></i>STEP1 チームB ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      指示に従って歩き、見つけたものをひらがなで書き込んでいきましょう。まず、鳥居をくぐって進むと左に伊能忠敬像が見つかります。その後ろを見ると、日本列島が描かれているます。<br />
+                      1の空欄に「にほん」と書き込んで、次の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st1-teamb02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st1-teamb02"><i></i>チームB ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      指示通りに進むと、干支の書かれた八角形の石碑が見つかります。その真ん中にいる虫はとんぼです。<br />
+                      2の空欄に「とんぼ」と書き込んで、次の指示に進みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st1-teamb03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st1-teamb03"><i></i>チームB ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      指示通りに進むと、お手洗いの前にある機械は「自動販売機」だとわかります。<br />
+                      3の空欄に「じどうはんばいき」と書き込んで、次の指示に進みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st1-teamb04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st1-teamb04"><i></i>チームB ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      指示通りに進むと、柵のような注意看板に、自転車での侵入が禁止であることが書かれています。<br />
+                      4の空欄に「じてんしゃ」と書き込んで、次の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st2-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st2-01"><i></i>STEP2 ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      両チーム、小さい紙を取り出して開き、手に持ちましょう。これで準備完了です。<br />
+                      次に、チームAは①の答えをジェスチャーで伝えましょう。チームBはジェスチャーが何を表現しているか考え、小さい紙を使ってその答えを作りましょう。<br />
+                      ジェスチャーが難しい場合、効果音や鳴き声を足したりしても大丈夫です！<br />
+                      これを互いに行ない、④まで作りましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st2-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st2-02"><i></i>STEP2 ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      両チーム4つのイラストを作ると図のようになります。<br />
+                      次にチームAは「S」の裏側にある文字を読みましょう。紙を開く必要はありません。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p15-st2-02.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st2-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st2-03"><i></i>STEP2 ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      チームAの紙にある「S」の裏にある文字は「ご」です。<br />
+                      次はチームBが「ご」の裏にある文字を読みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st2-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st2-04"><i></i>STEP2 ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      チームBの紙にある「ご」の裏にある文字は「ち」です。<br />
+                      次はチームAが「ち」の裏にある文字を読みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st2-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st2-05"><i></i>STEP2 ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      チームAの紙にある「ち」の裏にある文字は「そ」です。<br />
+                      次はチームBが「そ」の裏にある文字を読みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st2-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st2-06"><i></i>STEP2 ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      チームBの紙にある「そ」の裏にある文字は「う」です。<br />
+                      次はチームAが「う」の裏にある文字を読みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p15-st2-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p15-st2-answer"><i></i>STEP2 答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      チームAの「う」の裏にある文字は「G」です。これで終わりです。<br />
+                      読んだ文字をつなげると、答えは「ごちそう」です。
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /15p～の駅の謎 -->
+
+            <!-- 19pの駅の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading p19">19pの駅の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-2nd-p19-st1-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p19-st1-01"><i></i>STEP1 ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      レンガ造りの建物を眺めて、実際にあるものを見つけましょう。<br />
+                      まずは窓に注目すると良いでしょう。屋上の上も注目しましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p19-st1-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p19-st1-02"><i></i>STEP1 ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>「よ」、「た」、「め」、「か」、「け」、「い」、「は」の7つが見つかります。この7文字に丸をつけましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p19-st2-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p19-st2-01"><i></i>STEP2 ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      STEP1で丸をつけた7文字の図形を黒く塗りつぶすと、このようになります。<br />
+                      黒い矢印が指すものが何かを調べましょう。塗っていない図形に書かれた文字も手がかりになりそうです。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p19-st2-01.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p19-st2-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p19-st2-02"><i></i>STEP2 ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>塗っていない図形の文字を読むと、「ここのちずみろ」と書かれています。この広場の地図を探してみましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p19-st2-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p19-st2-03"><i></i>STEP2 ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>広場の地図を見ると、黒く塗った図形と同じ形をした場所があります。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p19-st2-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p19-st2-answer"><i></i>STEP2 答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      地図とSTEP2の図を対応させた上で黒い矢が指す場所を見ると、そこには噴水があることがわかります。<br />
+                      答えは「ふんすい」です。
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /19pの駅の謎 -->
+
+            <!-- 23pの駅の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading p23">23pの駅の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-2nd-p23-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p23-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      まずは1と書かれた指示に従いましょう。指示が途切れた部分で実際の場所の周りを見ると、ネズミが側面をつたう「時計」があります。指示が正しくつながるように、次は上から7番目の「時計がある。」で始まる指示に「2」と書き込んで続きを読みましょう。<br />
+                      このように続けて、「8」の指示までつながったらSTEP2に進みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p23-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p23-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      STEP1では、上から「1」「6」「3」「7」「5」「4」「2」「8」と数字が埋まります。この順番で赤い文字が表すイラストをつないでいきましょう。「ネズミ」「時計」「ポスト」「貝」「少女」「石」「いちょう」「鳥」の順になります。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p23-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p23-03"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>つないだ線をよく見ると、三角が4つできているはずです。三角の中を上から読むと、答えは「まちなみ」です。</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /23pの駅の謎 -->
+
+            <!-- 27pの駅の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading p27">27pの駅の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-2nd-p27-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      大成殿までに通る門には「仰」「髙」「杏」「壇」「入」「德」「門」が書かれています。これらの漢字を下の盤面から見つけて丸をつけましょう。<br />
+                      丸をつけたら、左下のルールを読んで謎を解き明かしましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>盤面のうち、はじめから曜日が確定している25マスは図の通りとなります。この曜日をもとに、スタートからゴールまで曜日を1マスごとに進めながらすべてのマスを通りましょう。</p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-02.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      このルールで謎を解くコツは以下の通りです。<br />
+                      コツ①線が通らない辺にはバツをつけて考えましょう。<br />
+                      ・外枠となるマスには線が通らない。<br />
+                      ・となり合うマスの曜日が2日以上離れているマス同士は線がつながらない。<br />
+                      ・すでに2辺を通る線がマスにあるとき、それ以外の辺に線は通らない。
+                    </p>
+                    <p>
+                      コツ②線が確実に通るマスに線を引きましょう。<br />
+                      ・スタートとゴール以外のマスのうち、2辺にバツがついているマスはそれ以外の2辺に線が通る。
+                    </p>
+                    <p>
+                      コツ③曜日が正しくつながるルートを考えましょう。<br />
+                      ・線をつなげる一番の手がかりは曜日です。線のルートを仮定して、つながるマスとつながらないマスを導きましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      コツ①をもとに、まずは外枠とマス同士がつながらない辺にバツをつけて、コツ②をもとに線を引いていくと図のようになります。<br />
+                      ここから、コツ③をもとに線を伸ばしていきましょう。盤面の左上から先に考えるとやりやすいかもしれません。またバツもつけながら引くと、線がつなげやすくなります。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-04.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-05"><i></i>ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      盤面の左上をコツ③をもとに考えていくと、図のように線を引くことができます。<br />
+                      次は、スタートから伸びる線を考えてみましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-05.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-06"><i></i>ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      盤面の右上をコツ③をもとに考えていくと、図のように線を引くことができます。<br />
+                      あとは盤面の右下を考え、ゴールにつながるように線を引きましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-06.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-07" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-07"><i></i>ヒントその7</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>28、29pのパズルをすべて解くと図のように曜日と線が埋まります。このとき、火が入るマスをスタートから通った順に読んで指示に従いましょう。</p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-07.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-08" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-08"><i></i>ヒントその8</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>火のマスを順に読むと、「二つのかさを作れ」となります。ファイルバッグの中に28、29pを開いた状態の冊子を入れて、傘を2つ作りましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-09" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-09"><i></i>ヒントその9</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>傘を2つ作ると、写真のようにファイルバッグの路線図の穴に「水」「土」「金」が出てきます。その上で30p、31pに必要な情報を書き込み、同じルールで解きましょう。</p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-09.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-10" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-10"><i></i>ヒントその10</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      30p、31pの盤面と、ファイルバッグの路線図を囲んでいる枠の大きさが同じなので、出てきた曜日を書き込んで新たな盤面が生まれそうです。<br />
+                      しかし、もとから盤面にある4つの曜日と新たに書き込んだ3つの曜日、そしてスタートとゴールを含めても合計9マスしか曜日が判明していません。28pのルールでパズルを解くには、合計25マスの曜日が判明していないといけません。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-11" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-11"><i></i>ヒントその11</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      路線図をよく見てみると、曜日を含む駅名があることに気付きます。さらに、ファイルバッグのポケットには「水」と「木」のイラストが、路線図右下には「日比谷線」の「日」があります。<br />
+                      これらの文字やイラストのあるマスと対応する30、31pの盤面に、曜日を書き込んでいきましょう。スタート、ゴール、曜日がもとから入っているマスを除いて合計で16マスあります。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-12" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-12"><i></i>ヒントその12</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      路線図から判明した曜日を書き込むと、図のようになります。<br />
+                      これで、合計25マスに曜日が埋まりました。28pのルールで再びこの盤面を解き明かしていきましょう。<br />
+                      まずはコツ①とコツ②をもとにバツと線をつなげていきましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-11.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-13" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-13"><i></i>ヒントその13</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      バツと線を書き込むと図のようになります。<br />
+                      ここからコツ③をもとに盤面の左下と右下を考えてみましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-12.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-14" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-14"><i></i>ヒントその14</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      30、31pのパズルを途中まで解き明かすと図のようになります。<br />
+                      ここから、盤面の右下と左下をつなげるように線を考えていきましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-13.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-15" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-15"><i></i>ヒントその15</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      パズルをさらに途中まで解き明かすと図のようになります。<br />
+                      ここから、盤面の右上をメインに考えていきましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-14.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-16" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-16"><i></i>ヒントその16</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      パズルをさらに途中まで解き明かすと図のようになります。<br />
+                      盤面の左上にもとから埋まっている「土」までつながるようにルートを考えましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-15.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-17" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-17"><i></i>ヒントその17</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      パズルをすべて解き明かすと図のようになります。<br />
+                      このとき、火が入るマスをスタートから通った順に読みましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-p27-16.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-p27-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-p27-answer"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>火が入るマスを順に読むと、「がっこうがこたえです」となります。答えは「がっこう」です。</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /29p～の駅の謎 -->
+
+            <!-- キーワードA,Bをどちらも導き出せたら -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading white">
+                キーワードA,Bを<br />
+                どちらも導き出せたら
+              </div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-2nd-ab-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-ab-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      まずは迷路の紙2枚とシールAを取り出しましょう。<br />
+                      取り出したら、迷路の紙2枚でそれぞれ「チケット」から「えきいん」まで、しりとりで進みましょう。<br />
+                      1つは「チケット」「とけい」「いぬ」……の順、もう1つは「チケット」「トイレ」「れいぞうこ」……の順に進みます。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-ab-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-ab-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>2つの迷路を解くと図のようになります。</p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-ab-02-02.png" alt="" />
+                    </p>
+
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-ab-02-01.png" alt="" />
+                    </p>
+                    <p>
+                      途中で通ったカタカナを読むと、「マズダイヤフタツツクレ」「ツギニテンセンニアウシールハレ」となります。<br />
+                      ダイヤを2つ作った後、点線に合うシールを、シールAから探して4枚貼りましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-ab-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-ab-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>4枚のシールを貼ると、迷路の盤面が変化します。</p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-ab-02-03.png" alt="" />
+                    </p>
+                    <p>もう一度「チケット」から「えきいん」まで進みましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-ab-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-ab-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>最初は「チケット」「トイレ」「れきし」の順に進み、最後は「しか」「かげえ」「えきいん」の順に進みます。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-2nd-ab-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-2nd-ab-answer"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      迷路を解くと図のようになります。<br />
+                      通ったカタカナを読むと「ツギノエキハエイチゼロヨンダ」となります。路線図を見るとH04は六本木駅であることがわかります。<br />
+                      次のページにある袋とじを開いて、36pに「六本木」と書いて、六本木駅に向かいましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-2nd-ab-answer.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /キーワードA,Bをどちらも導き出せたら -->
+          </section>
+          <!-- /第2章 -->
+
+          <!-- 第3章 -->
+          <section class="p-hints-section">
+            <div class="p-hints-section__heading">
+              <div class="p-hints-section__title-03">
+                <span>
+                  <img class="" src="../assets/images/hints/h-03.svg" alt="2rd Mission" />
+                </span>
+              </div>
+            </div>
+
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading m03">38pの駅の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-3rd-p38-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p38-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      東京ミッドタウン付近を歩きながら解く謎です。出口7から出たら、矢印に従って歩きましょう。<br />
+                      示された地図をもとに <img class="o-accordion__number" src="../assets/images/dansanashi/no1.svg" /> 〜
+                      <img class="o-accordion__number" src="../assets/images/dansanashi/no5.svg" />
+                      にあるものを実際に見て、問いの答えを選択肢から探して丸をつけましょう。このとき、<img class="o-accordion__number" src="../assets/images/dansanashi/no5.svg" />
+                      は2つのマスに丸がつくことに注意しましょう。<br />
+                      道順がわからなくなった場合は、少し引き返してわかる場所から歩き直してみましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p38-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p38-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      <img class="o-accordion__number" src="../assets/images/dansanashi/no1.svg" /> は左から4マス目、<img class="o-accordion__number" src="../assets/images/dansanashi/no2.svg" />
+                      は左から3マス目、<img class="o-accordion__number" src="../assets/images/dansanashi/no3.svg" /> は左から2マス目、<img
+                        class="o-accordion__number"
+                        src="../assets/images/dansanashi/no4.svg"
+                      />
+                      は左から4マス目、<img class="o-accordion__number" src="../assets/images/dansanashi/no5.svg" /> は左から2マス目と5マス目に丸をつけましょう。<br />
+                      丸をつけたら、右のページの指示に従いましょう。各行が <img class="o-accordion__number" src="../assets/images/dansanashi/no1.svg" /> 〜
+                      <img class="o-accordion__number" src="../assets/images/dansanashi/no5.svg" /> の選択肢のマスと対応しているので、丸をつけたマスを黒く塗りつぶしましょう。<br />
+                      6マス塗りつぶしたら、現れた盤面のルールを推測して解き明かしましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p38-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p38-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>正しく塗りつぶすと、図のように情報が浮かびあがります。</p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p38-03.png" alt="" />
+                    </p>
+                    <p>
+                      左上の「喋ると出る音」という例示から、黒マスに現れる説明文から導き出した言葉を、そのマスの周囲8マスのうち矢印が隣接する空白マスに埋めるルールだと推測できます。このルールで文字の埋まっていないマスを埋めていきましょう。<br />
+                      右上にあるツルハシが描かれた黒マスに従い、マスを埋めるとこのようになります。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p38-03-02.png" alt="" />
+                    </p>
+                    <p>すべり台の名称は、<img class="o-accordion__number" src="../assets/images/dansanashi/no5.svg" /> の場所の近くで確認することができます。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p38-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p38-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      すべてのマスを埋めると、図のようになります。<br />
+                      ここから、「はし」「いえ」「えい」「しま」の文字を盤面から探して、そのマスに黒マスの情報と同じルールで矢印が隣接するようにシールを貼り、シールで隠されなかった文字を上から読んでいきましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p38-04.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p38-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p38-answer"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      正しくシールを貼ると、図のようになります。<br />
+                      シールで隠されなかった文字を上から読むと、「こたえはししまいえき」となります。<br />
+                      41pに答えの駅名である「ししまい」を書き込んで、40pの謎を解きましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p38-answer.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <!-- 40pの謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading m03">40pの謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-3rd-p40-st1-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st1-01"><i></i>STEP1 ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      8つのイラストはどれもそのまま作ることはできないようです。<br />
+                      イラストをひらがなに置き換えて、何を作ればいいかを考えましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st1-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st1-02"><i></i>STEP1 ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>絵は「かぶとむし」「いとでんわ」「シートベルト」「サングラス」「ソフトクリーム」「ショートケーキ」「コントローラー」「ふともも」を表しています。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st1-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st1-03"><i></i>STEP1 ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>「かぶとむし」というイラストはピースにありません。しかし、「かぶ」のイラストならありそうです。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st1-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st1-04"><i></i>STEP1 ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「かぶとむし」を「かぶ」と「むし」のように分けることができます。ピースに「かぶ」と「むし」のイラストがあるので、線路の描かれた紙にある「かぶ」と「むし」に組み合わさるようにシールを貼りましょう。写真のようになります。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p40-st1-04.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st1-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st1-05"><i></i>STEP1 ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      次は「い」と「でんわ」、「シー」と「ベルト」を作り、その次は「さん」個の「グラス」を作りましょう。<br />
+                      「シー」と「ベルト」は色の背景がないため、シールを貼る必要はありません。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st1-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st1-06"><i></i>STEP1 ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「そふ」と「クリーム」、「ショー」と「ケーキ」、「コン」と「ローラー」、「ふ」と「もも」を作りましょう。最後の「ふ」と「もも」はダイヤを隠さないように紙の下に差し込む必要があります。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-01"><i></i>STEP2 ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      すべてのイラストを作り上げると、写真のようになります。ここからルールに従って、ししまい駅からしりとりの順で駅を巡りましょう。「ししまい」「いるか」「かまぼこ」「こけし」「ししまい」の順に巡ります。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p40-st2-01.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-02"><i></i>STEP2 ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      このようにすると、ししまい駅からいるか駅に進めます。<br />
+                      途中で通った「穴きをり竹」を41pに書き込みましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p40-st2-02.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-03"><i></i>STEP2 ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      このようにすると、いるか駅からかまぼこ駅に進めます。<br />
+                      途中で通った「をな引しを」を書き込みましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p40-st2-03.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-04"><i></i>STEP2 ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      このようにすると、かまぼこ駅からこけし駅に進めます。<br />
+                      途中で通った「読がきて谷」を書き込みましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p40-st2-04.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-05"><i></i>STEP2 ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>こけし駅からししまい駅へ進むためには、あるピースが他のピースを追い越す必要があります。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-06"><i></i>STEP2 ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      このようにすると、こけし駅からししまい駅に進めます。<br />
+                      途中で通った「めらぬ月折」を書き込みましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p40-st2-06.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-07" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-07"><i></i>STEP2 ヒントその7</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>書き込んだ文字を縦に読むと、「竹を谷折りして月を引きぬきながら穴を読め」となります。竹は中央の位置にあるので、まずは全体を半分に折りましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-08" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-08"><i></i>STEP2 ヒントその8</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      月がこのようにでき上がります。ピンクの背景になっているので、シールを貼りましょう。できた月をゆっくり引きぬくと、2つの穴に文字が入ります。穴に入った文字を読むと「<img
+                        class="o-accordion__number"
+                        src="../assets/images/dansanashi/no3.svg"
+                      />
+                      でみつけた物作り先へ進め」と読むことができます。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p40-st2-08.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-09" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-09"><i></i>STEP2 ヒントその9</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p><img class="o-accordion__number" src="../assets/images/dansanashi/no3.svg" /> は38pにあります。ここで見つけたものを作りましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-10" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-10"><i></i>STEP2 ヒントその10</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>キットの中に、<img class="o-accordion__number" src="../assets/images/dansanashi/no3.svg" /> で見つけたマークにそっくりなものがあります。よく探してみましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-11" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-11"><i></i>STEP2 ヒントその11</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      謎の封筒を使う必要があります。<img class="o-accordion__number" src="../assets/images/dansanashi/no3.svg" />
+                      で見つけたマーク作るために、必要な動作があれば思い切ってやってみましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-st2-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-st2-answer"><i></i>STEP2 答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      謎の封筒を開け、このように逆に折ることで、<img class="o-accordion__number" src="../assets/images/dansanashi/no3.svg" /> で見つけたマークを作ることができます。<br />
+                      作ったら、封筒の中の指示に従いましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p40-st2-answer.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-sonogo-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-sonogo-01"><i></i>その後のヒント1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      スタートガイドの2pの中央に太陽があります。これと同じ太陽がシールBにあります。まずはそのシールを台紙から剥がして、向かい合わせましょう。すると、自分の方に電車が現れるはずです。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-sonogo-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-sonogo-02"><i></i>その後のヒント2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      スタートガイドとシールの太陽が向かい合わせになるように、シールののりがついていない面を重ね合わせましょう。<br />
+                      そして、冊子の中央にある駅の外から中にかけて線路が続いています。すこし冊子の中央を開くと、線路が覗けます。その線路に電車を沿わせるようにしてシールを冊子の中央に入れ込みましょう。このようになります。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-3rd-p40-sonogo-02.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-p40-sonogo-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-p40-sonogo-03"><i></i>その後のヒント3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      3pの猫をなでて、太陽を離し、電車をゆっくり引き抜くと冊子の隙間から紙を引き出すことができます。<br />
+                      次はその紙の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /40pの謎 -->
+
+            <!-- 移動中の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading m03">移動中の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-3rd-move-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      スタートガイドから引き出した紙の謎を解きながら、次の目的地まで移動しましょう。<br />
+                      まずは、引き出した紙の裏にいる車掌の指示に従って、六本木駅の日比谷線に戻りましょう。その後、表と書かれた面の一番下、「馬」の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      六本木駅の日比谷線の2番線に向かい、電車に乗り込みましょう。<br />
+                      ここから、次の「神谷町駅」に着くまでに、「馬」の謎を解いて答えの指示を読みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「いま電車に乗車した駅名」は六本木なので、「6」「本」「木」の下を読むと、答えは「ぐんて」となります。「軍手」の指示に従いましょう。<br />
+                      神谷町駅に着いたら、開いたドアとは逆の窓を見ましょう。柱の両側にパイプはないので、電車が発車したら「天狗」の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      虎ノ門ヒルズ駅に着いたら、「天狗」の謎を解きましょう。<br />
+                      虎ノ門ヒルズ駅では「左」側の扉が開きました。今いる電車の吊り革の形は「三角形」なので、三角形を左から読みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-05"><i></i>ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      天狗の謎の答えは「てんぐ」です。再び、「天狗」の指示に従いましょう。霞ヶ関駅に着いたら、「天狗」の謎を解きましょう。<br />
+                      霞ヶ関駅では「右」側の扉が開きました。今いる電車の吊り革の形は「三角形」なので、三角形を右から読みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-06"><i></i>ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      今度は答えが「ぐんて」になりました。再び、「軍手」の指示に従いましょう。<br />
+                      日比谷駅に着いたら、開いたドアとは逆の窓を見ましょう。柱の両側にあるパイプの色は「あひる」の選択肢と同じなので、電車が発車したら「あひる」の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-07" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-07"><i></i>ヒントその7</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「あひる」のイラストの指示通り、銀座駅に着いたら電車を降りましょう。<br />
+                      電車は6番線に着いたので、次に従うのは「6」の指示です。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-08" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-08"><i></i>ヒントその8</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      銀座駅の銀座線の1番線に向かいましょう。<br />
+                      今いる駅は「銀座駅」なので、同じ頭文字である「ぎょうざ」の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-09" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-09"><i></i>ヒントその9</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>銀座駅の1番線にやってくる電車はすべて「渋谷駅」が終点です。「ぎょうざ」の謎の「しぶや」の文字の1つ前をそれぞれ読みましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-10" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-10"><i></i>ヒントその10</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「ぎょうざ」の謎の答えは「あひる」です。<br />
+                      1番線にやってきた電車に乗り込んで、「あひる」の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-11" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-11"><i></i>ヒントその11</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「あひる」の指示通り、新橋駅に着いたら電車を降りましょう。<br />
+                      電車は1番線に着いたので、次に従うのは「1」の指示です。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-3rd-move-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-3rd-move-answer"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>新橋駅の出口2に向かい、43pの袋とじを開けて4th Missionへと進みましょう。</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /移動中の謎 -->
+          </section>
+          <!-- /第3章 -->
+
+          <!-- 第4章 -->
+          <section class="p-hints-section">
+            <div class="p-hints-section__heading">
+              <div class="p-hints-section__title-04">
+                <span>
+                  <img class="" src="../assets/images/hints/h-04.svg" alt="4th Mission" />
+                </span>
+              </div>
+            </div>
+            <!-- 46pの駅の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading m04">46pの駅の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-4th-p46-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      旧新橋停車場で解く謎です。<br />
+                      まずはAの場所へ向かい、実際の建物の入り口の形を見て、下敷きと組み合わせて同じ形のものを2つ作りましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      Aの場所の入り口を2つ作ると、図のようになります。2つの入り口の間に窓があるので、実際の場所を正面から見て四角い写真が飾られている窓のマス目を確認して、そのマスに書かれた文字を上から読みましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-p46-02.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      Aの謎の答えは「機械」です。<br />
+                      次はBの場所に向かいましょう。実際の建物の裏側を正面から見て、建物の上部にある窓の形を下敷きと組み合わせて作りましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      Bの場所から見える建物を作ると、図のようになります。<br />
+                      この青い枠が示す2つの場所を実際に見に行き、そこに何があるかを確認しましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-p46-04.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-05"><i></i>ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      停車場の左側には「かいだん」が、右側には「せんろ」がありました。<br />
+                      「かいだん」は青い枠で変換されると「かい」に、「せんろ」は「せん」になります。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-06"><i></i>ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>青い枠に入ったものは、最初の2文字が表すものに変換されるようです。この変換のルールで、「すいとう」と「しゃかい」を変換した4文字が答えとなります。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-07" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-07"><i></i>ヒントその7</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      Bの場所で解いた謎の答えは「すいしゃ」となります。<br />
+                      答えを埋めると、右ページの指示が「すいかを3つ作り、そのままきしゃを1周させて、星が通る文字を読め。」であることがわかります。47pと下敷きを使ってこの指示を実行しましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-08" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-08"><i></i>ヒントその8</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      すいかを3つ作るとこのようになります。<br />
+                      この状態から線路を汽車が走るように反時計回りに回転させると、「うし作りうＮ１８ってＮ１６までＴ１３Ｚ１４てかせんよめ。」となります。このままでは文章の意味がわかりません。<br />
+                      アルファベットと数字……、どこかで見覚えはありませんか？
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-p46-08.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-09" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-09"><i></i>ヒントその9</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      アルファベットと数字は、駅の番号を表していました。路線図を見て駅の番号を駅名に変換して指示を読むと、「うし作りう『志茂』って『王子』まで『木場』『押上』て下線よめ。」、つまり「うし作り
+                      うし持って 王子まで 牙押し上げて 下線よめ。」と読むことができます。<br />
+                      47pと下敷きを使ってこの指示を実行しましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-10" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-10"><i></i>ヒントその10</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      牛を作って、牛を持ちながら牙を王子まで押し上げると図のようになります。<br />
+                      この状態で下線がある文字を読むと「このまま窓から月が見える角度でペン先をよめ。」となります。牛を押さえて牙が王子の上にある状態で、Aの場所の謎で使った窓から月が見える角度でペン先を読みましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-p46-10.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-11" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-11"><i></i>ヒントその11</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>窓から月が見える角度で調整すると、ペン先には図のようなものが現れます。手前の5つの単語に、奥にある青い枠と「ラ」が重なって見えます。この青い枠、見覚えはないでしょうか？</p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-p46-11.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-12" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-12"><i></i>ヒントその12</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      青い枠は、Bの場所の謎にあった枠と同じです。<br />
+                      「イエロー」「映画」「しまうま」「柱」「能力」の最初の2文字と「ラ」を続けて読むと、「いえ えい しま はし のうら」となります。<br />
+                      「家」「エイ」「島」「橋」はどこかで見たはずです。その裏側に次の手がかりがあります。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-13" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-13"><i></i>ヒントその13</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「家」「エイ」「島」「橋」は39pの盤面に貼ったシールに描かれていました。その裏とは、シールの裏面を指しています。シールをはがして裏面を見てみましょう。図のように「48p同ジジケセ」とでてきます。<br />
+                      48pを開いて、この指示に従いましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-p46-13.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-14" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-14"><i></i>ヒントその14</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      48pのマスには、シールの裏面に書かれていた「48p同ジジケセ」と同じ字が存在しています。これらの字を消していきましょう。<br />
+                      しかし、それだけでは次の指示は現れません。シールの裏面に、他に消せそうな文字はないでしょうか。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-15" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-15"><i></i>ヒントその15</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      シールの裏面には、39pの盤面に書き込んだ文字が反転して写っていました。これらの文字も48pから消していきましょう。<br />
+                      すると、「迷路ニほし9コ作レ」という指示が現れます。次はこの指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-16" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-16"><i></i>ヒントその16</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>今はがしたシールと、迷路に星の一部が描かれています。これらを使って星を9個作るにはどうしたらよいでしょうか？</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-17" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-17"><i></i>ヒントその17</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      このように貼ることで星を9個作ることができます。<br />
+                      <span class="red underline"
+                        >実際に、冊子に貼られたシールをこの通りの場所に貼ってください。その際、既に貼られているシールを切ったりする必要はありません。これによって迷路の盤面が再び変化し、筒状に一周する迷路が完成します。</span
+                      >
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-p46-17.png" alt="" />
+                    </p>
+                    <p>迷路の謎に「迷路の盤面が変化したら、もう一度『チケット』から『駅員』まで進め。」というルールがあるため、もう一度迷路を解いてみましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-18" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-18"><i></i>ヒントその18</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「チケット」「とんかつ」「つくえ」の順で通ります。<br />
+                      次は今貼ったシールのイラストを通ります。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-19" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-19"><i></i>ヒントその19</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      このように通ることで「えきいん」までたどり着くことができます。通ったカタカナを読むと、「ギョウザノウエニアルテンセンジュンニヤマオリ」となります。<br />
+                      シールを貼った迷路の紙はファイルバッグにしまいましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-p46-19.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p46-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p46-answer"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「ぎょうざ」は、先ほど電車に乗りながら解いた紙に描かれています。<br />
+                      「裏」と書かれた辺りに①と②の点線があります。これを①から順に山折りしましょう。すると、車掌さんのセリフと「裏」の漢字に変化が起きます。もう一度車掌さんのセリフに従いましょう。
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <!-- 移動中の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading m04">移動中の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-4th-move-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-move-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      裏表の書かれた紙を取り出して指示通りに折ると、このように「裏」と書かれた文字が「表」になりました。<br />
+                      再び、車掌の指示に従って新橋駅の銀座線に戻り、「6」の指示に従いましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-move-01.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-move-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-move-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      新橋駅の銀座線の1番線に向かいましょう。<br />
+                      今いる駅は「新橋駅」なので、同じ頭文字である「鹿」の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-move-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-move-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「鹿」の指示に従って車両側面の4桁の数字を確認しましょう。<br />
+                      車両によって数字は異なりますが、どの数字でも下の謎の答えは同じになります。虎ノ門駅に着くまでに、謎を解いて答えの指示を読んでおきましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-move-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-move-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      4桁の数字は千の位は奇数、十の位は5以下となります。<br />
+                      答えは「ビーサン」となるので、「ビーサン」の指示を読みましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-move-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-move-05"><i></i>ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      「ビーサン」の指示通り、虎ノ門駅に着いたら電車を降りましょう。<br />
+                      1つ前の謎の答えは「ビーサン」なので、出口B3（ビーサン）に向かいましょう。出口に着いたら、今いる駅は「虎ノ門駅」なので、同じ頭文字である「トマト」の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-move-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-move-06"><i></i>ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      目の前にある自動ドアを通り、目の前のエスカレーターを3回乗り継いで進みましょう。<br />
+                      その後、指示に従って謎を解きましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-move-07" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-move-07"><i></i>ヒントその7</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      3回乗り継いだ乗り物は「エスカレーター」です。<br />
+                      次は「カレー」の指示に従いましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-move-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-move-answer"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>虎ノ門ヒルズの芝生の広場で膝を抱えて座る人間のアートを見つけたら、51pの袋とじを開いて5th Missionへと進みましょう。</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /移動中の謎 -->
+          </section>
+          <!-- /第4章 -->
+
+          <!-- 第5章 -->
+          <section class="p-hints-section">
+            <div class="p-hints-section__heading">
+              <div class="p-hints-section__title-05">
+                <span>
+                  <img class="" src="../assets/images/hints/h-05.svg" alt="5th Mission" />
+                </span>
+              </div>
+            </div>
+            <!-- 52pの駅の謎 -->
+            <article class="p-hints-section__article">
+              <div class="p-hints-section__article-heading p52">52pの駅の謎</div>
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-4th-p52-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>芝生の広場で王冠の謎を解く必要があります。しかし、王冠のイラストはどこにもありません。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>「おうかん」の謎がどこかにないでしょうか。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>「おう」と「かん」の謎であれば、どこかにあったはずです。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>スタートガイドの5pに「おう」の謎と「かん」の謎がありました。これらを組み合わせて、芝生の広場で謎を解きましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-05"><i></i>ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>芝生の広場で漢字を8種類見つけましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-06"><i></i>ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>芝生の広場にある文字でできた人物の中に「おう」の謎に含まれている8種類の漢字があります。見つけて隣の文字を読みましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-07" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-07"><i></i>ヒントその7</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>見つかる文字は、面、建、速、飾、福、意、風、波です。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-08" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-08"><i></i>ヒントその8</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      隣の文字を読むと「其の２から失われた物戻せ」となります。<br />
+                      まずは「其の2」を探しましょう。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-09" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-09"><i></i>ヒントその9</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>「其の2」はスタートガイドの2pにあります。ここから失われた物とは何でしょうか？</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-10" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-10"><i></i>ヒントその10</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      其の2の写真に写った看板、どこかで見てはいないでしょうか？<br />
+                      先ほど眺めていた文字でできた人物に形が似ています。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-11" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-11"><i></i>ヒントその11</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>文字でできた人物の足元に注目すると、其の2の写真と同じ看板があります。見比べて、失われたものが何かを探しましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-12" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-12"><i></i>ヒントその12</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>其の2の写真から、のぼろうとしている人と×が失われています。この2つをもとに戻しましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-13" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-13"><i></i>ヒントその13</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>下敷きを使うことで、このように元に戻すことができます。このときに丸で囲まれる文字を読みましょう。</p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-4th-p52-13.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-4th-p52-answer" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-4th-p52-answer"><i></i>答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      答えは「みらい」です。ゲームサイトに入力しましょう。<br />
+                      ここから先の謎は、時間と場所の制限はございません。自由な時間と場所でお楽しみくださいませ。
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /52pの駅の謎 -->
+          </section>
+          <!-- /第5章 -->
+
+          <!-- 最終章 -->
+          <section class="p-hints-section">
+            <div class="p-hints-section__heading">
+              <div class="p-hints-section__title-final">
+                <span>
+                  <img class="" src="../assets/images/hints/h-final.svg" alt="Final Mission" />
+                </span>
+              </div>
+            </div>
+
+            <!-- Final Mission -->
+            <article class="p-hints-section__article p-hints-section__nazoa">
+              <ul class="p-hints-section__list">
+                <li>
+                  <input id="hints-final-01" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-01"><i></i>ヒントその1</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>まずはハットを見つけましょう。ファイルバッグに注目してください。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-02" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-02"><i></i>ヒントその2</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      ハットをかぶった車掌さんが、ファイルバッグの乗車券ポケットにいます。<br />
+                      この車掌さんに勝つ必要があります。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-03" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-03"><i></i>ヒントその3</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>ハットをかぶった車掌さんは、手をグーにしています。グーに勝つには……？</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-04" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-04"><i></i>ヒントその4</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>24時間乗車券に注目してみましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-05" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-05"><i></i>ヒントその5</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      24時間乗車券の裏面を、このように差し込めば、ハットをかぶった車掌さんに勝つことができます。<br />
+                      次は黒目と黒目中の間に従いましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-final-05.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-06" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-06"><i></i>ヒントその6</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>黒目と黒目中……。そんな文字はこれまで見ていません。しかし、似たような単語なら見つかるかもしれません。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-07" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-07"><i></i>ヒントその7</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>路線図に注目してみましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-08" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-08"><i></i>ヒントその8</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>路線図に、黒目と黒目中はありませんが、「目黒」と「中目黒」はあります。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-09" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-09"><i></i>ヒントその9</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>目黒と中目黒を反転させると、黒目と黒目中になります。そして、路線図が載っているファイルバッグは少し透けています。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-10" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-10"><i></i>ヒントその10</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      ファイルバッグの中から路線図を見れば、すべての駅名が反転して見えます。ハットをかぶった車掌に勝った状態で、ファイルバッグの中から目黒と中目黒の間を見てみましょう。<br />
+                      そこにあるものに、次は従う必要があります。
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-11" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-11"><i></i>ヒントその11</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      黒目と中目黒の間には、このような時計のイラストがあります。<br />
+                      ピンクの時計……どこかで見たはずです。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-final-11.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-12" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-12"><i></i>ヒントその12</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>ピンクの時計は、スタートガイドの6pにある時計と同じもののように見えますが、どこかが違っているようです。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-13" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-13"><i></i>ヒントその13</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>スタートガイドの6pにある時計と左右が反対になっているようです。「時計」の謎も左右反対にして解いてみましょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-14" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-14"><i></i>ヒントその14</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>「時計」の謎の指示をひらがなにしてみるとよいでしょう。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-15" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-15"><i></i>ヒントその15</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>「時計」の謎の指示を反対……つまり右から読むと、「れきしいかりくつすしきりひらく」となります。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-16" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-16"><i></i>ヒントその16</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>「歴史、いかり、靴、寿司、切り開く」……。「歴史」「いかり」「靴」「寿司」をどこかで見なかったでしょうか？</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-17" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-17"><i></i>ヒントその17</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>この4つは迷路に貼られたシールに書かれています。4枚のシールを切り、開きましょう。このとき、シールだけを切るようにご注意ください。</p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-18" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-18"><i></i>ヒントその18</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      開くとこのように駅が現れます。<br />
+                      さあ、これで最後です。出発から到着まで進み、通った文字を読みましょう。
+                    </p>
+                    <p>
+                      <img class="" src="../assets/images/hints/hints-final-18.png" alt="" />
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <input id="hints-final-19" type="checkbox" class="o-accordion__toggle p-hints-section__toggle" />
+                  <label class="p-hints-section__label o-accordion__label" for="hints-final-19"><i></i>最後の答え</label>
+                  <div class="o-accordion__content p-hints-section__content">
+                    <p>
+                      最後のこたえは「終点」です。<br />
+                      本日はご乗車いただき、誠にありがとうございました！
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <!-- /Final Mission -->
+          </section>
+          <!-- /最終章 -->
+        </div>
+      </div>
+      <footer class="o-footer"><%- include("../_footer"); %></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+@use "../shitaji" as *;
+
+@mixin button($color: $yellow) {
+  border-radius: 10px;
+  text-align: center;
+
+  a,
+  button {
+    @include flex(center, center, nowrap);
+    @include zenkaku(700);
+
+    color: $color;
+    border-radius: 40px;
+  }
+}
+
+.a-button--edit {
+  width: 40px;
+  text-align: center;
+
+  a {
+    @include fz(12, 12, 0.03);
+
+    display: block;
+    color: $yellow-2;
+    border: 1px solid $yellow-2;
+    border-radius: 4px;
+    padding: 4px;
+  }
+}
+
+.a-button--type1 {
+  @include button($gray);
+
+  a,
+  button {
+    @include bg($yellow);
+
+    @media (--lg) {
+      &:hover {
+        @include bg($black);
+
+        color: $white;
+      }
+    }
+  }
+}
+
+.a-button--type2 {
+  @include button($gray);
+
+  a,
+  button {
+    @include bg($white);
+
+    border: 1px solid $black;
+
+    @media (--lg) {
+      &:hover {
+        @include bg($gray);
+
+        color: $white;
+      }
+    }
+  }
+
+  i {
+    @include text-replace("../images/icon-arrow-02.svg");
+
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.a-button--type3 {
+  @include button($yellow);
+
+  a,
+  button {
+    @include bg($white);
+    @media (--lg) {
+      &:hover {
+        @include bg($yellow);
+
+        color: $white;
+      }
+    }
+  }
+
+  i {
+    @include text-replace("../images/icon-arrow-01.svg");
+
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.a-button--type4 {
+  @include button($yellow);
+
+  a,
+  button {
+    @include bg($white);
+    @media (--lg) {
+      &:hover {
+        @include bg($yellow);
+
+        color: $white;
+      }
+    }
+  }
+
+  i {
+    @include text-replace("../images/icon-arrow-02.svg");
+
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.is-disable {
+  a {
+    color: $gray-4 !important;
+    pointer-events: none;
+  }
+
+  i {
+    opacity: 0.4;
+  }
+}

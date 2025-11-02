@@ -1,0 +1,75 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.t-layout {
+}
+
+.t-layout__inner {
+  @include max-width(1024px);
+  display: grid;
+  grid-template-columns: 20rem 480px 20rem;
+  margin-inline: auto;
+  justify-content: center;
+}
+
+/* 右 */
+
+.t-layout__header {
+  position: sticky;
+  top: 0;
+  padding-right: 16px;
+  padding-top: 16px;
+}
+
+/* 中央 */
+
+.t-layout__content {
+  border-left: 1px solid $gray-5;
+  border-right: 1px solid $gray-5;
+  position: relative;
+  grid-column: 2 / 3;
+  padding-bottom: 80px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.t-layout__heading {
+  @include flex(flex-start, center, nowrap);
+
+  align-items: center;
+  column-gap: 24px;
+  padding: 16px;
+
+  a {
+    display: block;
+  }
+
+  i {
+    display: block;
+    background-image: url("../images/icon-arrow-l.svg");
+    width: 16px;
+    height: 14px;
+  }
+}
+
+.t-layout__heading-title {
+  @include zenmaru;
+}
+
+/* 左 */
+
+.t-layout__footer {
+  padding-left: 16px;
+  padding-top: 80px;
+}

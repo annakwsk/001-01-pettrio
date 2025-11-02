@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'リクエスト'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper t-layout">
+      <div class="t-layout__inner">
+        <%- include("../_header"); %>
+        <div class="t-layout__content">
+          <!-- heading -->
+          <div class="t-layout__heading">
+            <a href=""><i></i> </a>
+            <div class="t-layout__heading-title">アカウント登録</div>
+          </div>
+          <!-- /heading -->
+
+          <main class="p-request">
+            <div class="p-request__main">
+              <div class="p-request__title">認証コードを送信しました。<br />メールに記載された認証コードを入力してください。</div>
+              <section class="p-request__section o-form">
+                <div class="p-request__certification">
+                  <div class="p-request__certification-heading">認証コードを送信したメールアドレス</div>
+                  <div class="p-request__certification-body">xxxx@gmail.com</div>
+                </div>
+                <ul class="p-request__section-list">
+                  <li class="o-form__item">
+                    <div class="o-form__heading">認証コード</div>
+                    <input type="text" name="パスワード" />
+                  </li>
+                  <li class="o-form__item">
+                    <a href="" class="link">コードを再送する</a>
+                    <div class="note">※認証コードが受信できない場合は、お客様サポートまでお問い合わせ下さい。</div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="p-request__button">
+              <div class="a-button--type1 p-request__next">
+                <a href="index-15.html"> 認証する </a>
+              </div>
+            </div>
+          </main>
+        </div>
+        <%- include("../_footer"); %>
+      </div>
+    </div>
+  </body>
+</html>

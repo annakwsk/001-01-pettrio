@@ -1,0 +1,130 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.o-header__logo {
+  margin-bottom: 32px;
+}
+
+/* ユーザー */
+
+.o-header__heading {
+  margin-bottom: 40px;
+}
+
+.o-header__user {
+  margin-bottom: 16px;
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.o-header__name {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  column-gap: 8px;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.o-header__name-heading {
+  @include zenmaru;
+}
+
+.o-header__buttons {
+  li {
+    + li {
+      margin-top: 16px;
+    }
+  }
+}
+
+.o-header__buttons-body {
+  a {
+    padding: 8px 16px;
+  }
+}
+
+/* お迎え意向 */
+.o-header__omukae {
+  @include flex(flex-start, center, nowrap);
+
+  column-gap: 8px;
+}
+
+.o-header__omukae-heading {
+  @include fz(13, 16, 0.03);
+  @include zenkaku(700);
+}
+
+/* ナビゲーション */
+
+.o-nav__list {
+  li {
+    + li {
+      margin-top: 16px;
+    }
+  }
+
+  a {
+    @include zenmaru;
+
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    column-gap: 12px;
+    color: $black;
+    align-items: center;
+  }
+
+  span {
+    display: block;
+  }
+
+  i {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.o-nav__home {
+  i {
+    background-image: url("../images/icon-home.svg");
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.o-nav__chat {
+  i {
+    background-image: url("../images/icon-chat.svg");
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.o-nav__news {
+  i {
+    background-image: url("../images/icon-news.svg");
+    width: 16px;
+    height: 20px;
+  }
+}
+
+.o-nav__request {
+  i {
+    background-image: url("../images/icon-request.svg");
+    width: 18px;
+    height: 16px;
+  }
+}
+
+.o-nav__mypage {
+  i {
+    background-image: url("../images/icon-mypage.svg");
+    width: 18px;
+    height: 18px;
+  }
+}

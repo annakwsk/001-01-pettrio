@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@use "shitaji";
+@use "atoms";
+@use "molecules";
+@use "organisms";
+@use "pages";
+@use "templates";
+
+@import "swiper/swiper-bundle.css";
+
+.hidden-lg {
+  @media (--lg) {
+    display: none !important;
+  }
+}
+
+.hidden-sm {
+  @media (--md) {
+    display: none !important;
+  }
+}
+
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
+}

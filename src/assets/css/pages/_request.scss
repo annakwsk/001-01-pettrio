@@ -1,0 +1,111 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.p-request__progress {
+  margin-bottom: 40px;
+
+  progress {
+    width: 100%;
+  }
+}
+
+.p-request__progress-caption {
+  @include fz(14, 14, 0.03);
+
+  text-align: right;
+  color: $gray-3;
+}
+
+.p-request__main {
+  margin-bottom: 64px;
+}
+
+.p-request__title {
+  @include zenkaku(700);
+
+  margin-bottom: 16px;
+}
+
+.p-request__main-heading {
+  @include zenkaku(700);
+
+  margin-top: 16px;
+}
+
+.p-request__checkbox {
+  li {
+    + li {
+      margin-top: 8px;
+    }
+  }
+}
+
+.p-request__radio {
+}
+
+.p-request__button {
+  @include flex(center, center, nowrap);
+
+  column-gap: 32px;
+}
+
+.p-request__next {
+  max-width: 240px;
+  width: 100%;
+
+  a {
+    height: 64px;
+    width: 100%;
+  }
+}
+
+.p-request__back {
+  a {
+    @include zenkaku(700);
+
+    color: $black;
+  }
+}
+
+.p-request__note {
+  @include fz(12, 20, 0.03);
+
+  margin-top: 32px;
+}
+
+.p-request__confirmation {
+}
+
+.p-request__section {
+  + .p-request__section {
+    margin-top: 40px;
+  }
+}
+
+.p-request__section-title {
+  @include zenkaku(700);
+}
+
+.p-request__certification {
+  margin-bottom: 40px;
+}
+
+.p-request__certification-heading {
+  @include zenkaku(700);
+}
+
+.p-request__textarea {
+  margin-top: 40px;
+}
+
+.p-request__textarea-heading {
+  margin-bottom: 16px;
+}
+
+.p-request__textarea-body {
+  @include fz(13, 18, 0.03);
+}
+
+.p-request__textarea-check {
+  margin-top: 8px;
+}

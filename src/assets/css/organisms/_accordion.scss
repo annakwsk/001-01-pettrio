@@ -1,0 +1,95 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.o-accordion {
+  border-bottom: 1px solid $yellow;
+}
+
+.o-accordion__toggle {
+  display: none;
+}
+
+.o-accordion__label {
+  display: block;
+  cursor: pointer;
+}
+
+.o-accordion__label,
+.o-accordion__content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s ease;
+}
+
+.o-accordion__content {
+  height: 0;
+  overflow: hidden;
+}
+
+.o-accordion__toggle:checked + .o-accordion__label + .o-accordion__content {
+  height: auto;
+  transition: all 0.3s ease;
+  padding-bottom: 24px;
+}
+
+.o-accordion__toggle:checked + .o-accordion__label::before {
+  transform: rotate(-180deg) !important;
+}
+
+/* sub */
+.o-accordion-sub {
+  border-top: 1px solid $yellow;
+}
+
+.o-accordion-sub__label {
+
+
+  @media (--lg) {
+    padding: 16px;
+  }
+
+  @media (--md) {
+    padding: 16px 8px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+    background-image: url("../images/icon-plus.svg");
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.o-accordion-sub__toggle:checked + .o-accordion-sub__label::before {
+  background-image: url("../images/icon-minus.svg");
+}
+
+/* 段差なし・サポート */
+
+.o-accordion__number {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  vertical-align: -0.3em;
+}
+
+.o-accordion__i {
+  width: 17px;
+  height: 24px;
+  display: inline;
+  vertical-align: -0.3em;
+}
+
+.o-accordion__arrow {
+  width: 29px;
+  height: 23px;
+  display: inline;
+  vertical-align: -0.3em;
+}

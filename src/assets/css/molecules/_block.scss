@@ -1,0 +1,73 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.m-block-star {
+  @include flex(flex-start, center, nowrap);
+
+  column-gap: 4px;
+
+  span {
+    width: 16px;
+    height: 16px;
+    display: block;
+
+    &.active {
+      background-image: url("../images/icon-star-active.svg");
+    }
+
+    &.def {
+      background-image: url("../images/icon-star-def.svg");
+    }
+  }
+}
+
+.m-block-confirmation {
+  li {
+    @include fz(14, 20, 0.05);
+
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    border-bottom: 1px solid $gray-5;
+    padding: 24px;
+
+    &:first-child {
+      border-top: 1px solid $gray-5;
+    }
+  }
+}
+
+.m-block-confirmation__heading {
+  @include zenkaku(700);
+}
+
+.m-block-fix__heading {
+  @include flex(center, center, nowrap);
+
+  column-gap: 8px;
+  margin-bottom: 16px;
+
+  i {
+    height: 24px;
+    width: 24px;
+    display: block;
+    background-image: url("../images/icon-check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  span {
+    @include zenmaru;
+  }
+}
+
+.m-block-fix__image {
+  @include max-width(200px);
+
+  margin-bottom: 16px;
+}
+
+.m-block-fix__body {
+  @include fz(16, 24, 0.05);
+
+  margin-bottom: 40px;
+}

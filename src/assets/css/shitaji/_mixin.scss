@@ -1,0 +1,219 @@
+@use "sass:math";
+@use "variables" as *;
+
+/* ブレイクポイント */
+
+$pc: 1025px;
+$tab: 1024px;
+$sp: 1024px;
+
+@mixin pc {
+  @media screen and (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin max-width($width: 960px) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* フォント */
+
+@mixin zenkaku($weight: 400) {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+@mixin zenmaru {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@mixin bold {
+  font-weight: bold;
+}
+
+@mixin fz($fontSize: false, $lineHeight: false, $letterSpacing: false) {
+  @if ($fontSize) {
+    font-size: math.div($fontSize, 10) + rem;
+  }
+
+  @if ($lineHeight) {
+    line-height: math.div($lineHeight, $fontSize);
+  }
+
+  @if ($letterSpacing) {
+    letter-spacing: ($letterSpacing) + em;
+  }
+}
+
+/* アイコン */
+
+@mixin text-hide {
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-hide {
+  @include text-hide;
+}
+
+@mixin text-replace($image) {
+  @include text-hide;
+
+  background: url($image) center top no-repeat;
+  background-size: contain;
+
+  .edge & {
+    background-size: 100% auto;
+  }
+}
+
+/* flex */
+
+@mixin flex($justify: space-between, $align: center, $flex-wrap: wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $flex-wrap;
+}
+
+/* background-color */
+
+@mixin bg($color: $yellow) {
+  background-color: $color;
+}
+
+/* padding */
+
+@mixin padding-sp($a: 56px, $b: 24) {
+  padding: $a math.div($b, 375) * 100%;
+}
+
+/* border */
+
+@mixin border-circle($color: $yellow) {
+  content: "";
+  display: block;
+  border-radius: 2px;
+  height: 1px;
+  background-color: $color;
+}
+
+/* 装飾 */
+
+@mixin bottom-circle {
+  position: relative;
+  padding-bottom: 70px;
+
+  &::after {
+    content: "";
+    background-image: url("../images/deco-circle-01.svg");
+    background-repeat: no-repeat;
+    max-width: 800px;
+    width: 100%;
+    height: 160px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media (--lg) {
+      background-position: center left;
+      bottom: -80px;
+    }
+
+    @media (--md) {
+      background-position: center;
+      background-size: 110%;
+      bottom: -60px;
+    }
+  }
+}
+
+@mixin scale {
+  transform: scale(0);
+  transform-origin: center;
+
+  &.is-active {
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 角丸見出し */
+
+@mixin heading-kadomaru($bg: $white) {
+  @include max-width(240px);
+
+  background-color: $bg;
+  border-radius: 24px;
+  padding: 8px;
+}
+
+/* ヒント・段差なし・サポートのタイトル */
+
+@mixin title($color: $yellow) {
+  @include bg($white);
+
+  padding: 56px 0;
+  border: 4px solid $color;
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  position: relative;
+
+  &::before,
+  &::after {
+    @include bg($white);
+
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 4px solid $color;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    left: -11px;
+  }
+
+  &::after {
+    right: -11px;
+  }
+}
