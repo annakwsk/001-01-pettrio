@@ -2,32 +2,39 @@
 @use "../shitaji" as *;
 
 .o-footer__section {
-    + .o-footer__section {
-        margin-top: 32px;
-        border-top: 1px solid $gray-5;
-        padding-top: 32px;
-    }
+  + .o-footer__section {
+    margin-top: 32px;
+    border-top: 1px solid $gray-5;
+    padding-top: 32px;
+  }
 }
 
 .o-footer__section-inner {
-    padding: 0 8px;
+  padding: 0 8px;
 }
 
 .o-footer__heading {
-    @include zenmaru;
-    @include fz(18, 18, 0.05);
+  @include zenmaru;
+  @include fz(18, 18, 0.05);
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .o-footer__list {
-    li {
-        + li {
-            margin-top: 16px;
-        }
+  li {
+    + li {
+      margin-top: 16px;
     }
-    a {
-        @include fz(16, 16, 0.05);
-        color: $black;
-    }
+  }
+  a {
+    @include fz(16, 16, 0.05);
+    color: $black;
+  }
+}
+
+.o-footer-copy {
+  @include fz(12, 18, 0.05);
+
+  margin-top: 40px;
+  padding-left: 8px;
 }

@@ -1006,13 +1006,15 @@ progress {
 html {
   font-size: 62.5%;
   scroll-padding-top: 48px;
+  height: 100%;
 }
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   font-weight: 300;
   color: #424242;
+  margin: 0;
   font-size: 1.6rem;
   line-height: 2;
   letter-spacing: 0.05em;
@@ -1671,6 +1673,13 @@ p + p {
   letter-spacing: 0.05em;
   color: #424242;
 }
+.o-footer-copy {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  margin-top: 40px;
+  padding-left: 8px;
+}
 .o-form__heading {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
@@ -1916,6 +1925,12 @@ p + p {
 .p-request__textarea-check {
   margin-top: 8px;
 }
+.t-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
 .t-layout__inner {
   max-width: 1024px;
   margin-left: auto;
@@ -1941,6 +1956,7 @@ p + p {
   position: relative;
   grid-column: 2/3;
   padding-bottom: 80px;
+  height: 100%;
 }
 .t-layout__content::before {
   content: "";
