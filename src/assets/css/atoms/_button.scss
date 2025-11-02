@@ -73,11 +73,13 @@
 }
 
 .a-button--type3 {
-  @include button($yellow);
+  @include button($white);
 
   a,
   button {
-    @include bg($white);
+    @include bg($green);
+    @include zenmaru;
+
     @media (--lg) {
       &:hover {
         @include bg($yellow);
@@ -85,13 +87,6 @@
         color: $white;
       }
     }
-  }
-
-  i {
-    @include text-replace("../images/icon-arrow-01.svg");
-
-    width: 24px;
-    height: 24px;
   }
 }
 

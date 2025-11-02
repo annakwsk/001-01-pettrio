@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'マイページ'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper t-layout">
+      <div class="t-layout__inner">
+        <%- include("../_header-login"); %>
+        <div class="t-layout__content">
+          <main class="p-mypage">
+            <!-- ユーザー情報 -->
+            <div class="p-mypage-user">
+              <div class="p-mypage-user__heading">
+                <div class="p-mypage-user__heading-icon">
+                  <img src="../assets/images/img-user.svg" alt="Pettrio" />
+                </div>
+
+                <div>
+                  <div class="o-header__name-heading">川崎杏菜</div>
+                  <div class="p-mypage-user__heading-id">
+                    <span>ID</span>
+                    <span>1345663</span>
+                  </div>
+                </div>
+
+                <div class="a-button--edit"><a href="">編集</a></div>
+              </div>
+
+              <div class="o-header__omukae p-mypage-user__omukae">
+                <div class="o-header__omukae-heading">お迎え意向</div>
+                <div class="m-block-star">
+                  <span class="active"></span>
+                  <span class="def"></span>
+                  <span class="def"></span>
+                </div>
+              </div>
+
+              <div class="p-mypage-user__text">はじめまして。今プードルと暮らしていて、2匹目のわんこを探しています。</div>
+            </div>
+            <!-- /ユーザー情報 -->
+            <!-- 見学 -->
+            <div class="p-mypage-visit">
+              <div class="p-mypage-visit__heading">お申し込み中の見学</div>
+              <div class="p-mypage-visit__body">
+                <div class="">
+                  <div class="p-mypage-visit__body-title">suzuki ブリーダー</div>
+                  <div class="p-mypage-visit__body-date">2025年1月1日 11:00〜</div>
+                </div>
+                <div class="p-mypage-visit__body-button">
+                  <a href="">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+            <!-- /見学 -->
+
+            <!-- 成約特典お申し込み -->
+            <div class="p-mypage-seiyaku a-button--type3">
+              <a href="">
+                <i></i>
+                <span> 成約特典お申し込み </span>
+              </a>
+            </div>
+            <!-- /成約特典お申し込み -->
+            <!-- メニュー -->
+            <nav class="p-mypage-nav">
+              <div class="p-mypage-nav__section">
+                <div class="p-mypage-nav__heading">設定</div>
+                <ul class="p-mypage-nav__list">
+                  <li>
+                    <a href=""> <span>お客様情報設定</span><i></i> </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="p-mypage-nav__section">
+                <div class="p-mypage-nav__heading">履歴</div>
+                <ul class="p-mypage-nav__list">
+                  <li>
+                    <a href=""> <span>リクエスト</span><i></i> </a>
+                  </li>
+                  <li>
+                    <a href=""> <span>見学履歴</span><i></i> </a>
+                  </li>
+                  <li>
+                    <a href=""> <span>成約履歴</span><i></i> </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="p-mypage-nav__section">
+                <div class="p-mypage-nav__heading">ヘルプ</div>
+                <ul class="p-mypage-nav__list">
+                  <li>
+                    <a href=""> <span>よくある質問</span><i></i> </a>
+                  </li>
+                  <li>
+                    <a href=""> <span>お問い合わせ</span><i></i> </a>
+                  </li>
+                  <li>
+                    <a href=""> <span>ログアウト</span><i></i> </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- /メニュー -->
+          </main>
+        </div>
+        <%- include("../_footer"); %>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,10 @@
 @use "sass:math";
 @use "../shitaji" as *;
 
+.p-request {
+  padding: 0 16px;
+}
+
 .p-request__progress {
   margin-bottom: 40px;
 

@@ -1,0 +1,150 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.p-mypage {
+  padding-top: 40px;
+}
+
+.p-mypage-user {
+  @include padding;
+
+  margin-bottom: 64px;
+}
+
+.p-mypage-user__heading {
+  display: grid;
+  grid-template-columns: 48px 1fr 40px;
+  column-gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.p-mypage-user__heading-icon {
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.o-header__name-heading {
+  @include fz(16, 20, 0.05);
+
+  margin-bottom: 4px;
+}
+
+.p-mypage-user__heading-id {
+  @include fz(12, 16, 0.03);
+
+  span {
+    &:first-child {
+      @include zenkaku(700);
+
+      margin-right: 8px;
+    }
+  }
+}
+
+.p-mypage-user__omukae {
+  margin-bottom: 16px;
+}
+
+/* 見学 */
+
+.p-mypage-visit {
+  @include padding;
+
+  margin-bottom: 40px;
+}
+
+.p-mypage-visit__heading {
+  @include zenmaru;
+
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+
+.p-mypage-visit__body {
+  @include bg($yellow);
+  @include flex(space-between, center, nowrap);
+
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.p-mypage-visit__body-title {
+  @include zenkaku(700);
+  @include fz(16, 20, 0.05);
+}
+
+.p-mypage-visit__body-button {
+  a {
+    @include bg($yellow-3);
+    @include fz(14, 16, 0.05);
+    @include zenkaku(700);
+
+    color: $gray;
+    padding: 8px 16px;
+    border-radius: 24px;
+  }
+}
+
+.p-mypage-seiyaku {
+  @include padding;
+
+  margin-bottom: 40px;
+
+  a {
+    column-gap: 8px;
+    padding: 16px;
+  }
+
+  i {
+    display: block;
+    background-image: url("../images/icon-present.svg");
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+/* メニュー */
+
+.p-mypage-nav__heading {
+  @include zenmaru;
+
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+.p-mypage-nav__list {
+  li {
+    border-bottom: 1px solid $gray-5;
+
+    &:first-child {
+      border-top: 1px solid $gray-5;
+    }
+  }
+  a {
+    @include zenkaku(700);
+    @include flex(space-between, center, nowrap);
+
+    color: $black;
+    padding: 16px;
+  }
+
+  i {
+    display: block;
+    background-image: url("../images/icon-arrow-r.svg");
+    width: 20px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.p-mypage-nav__section {
+  + .p-mypage-nav__section {
+    margin-top: 40px;
+  }
+}

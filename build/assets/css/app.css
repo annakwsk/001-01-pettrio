@@ -1028,9 +1028,6 @@ body.is-active {
   -webkit-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
 }
-main {
-  padding: 0 16px;
-}
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -1373,12 +1370,15 @@ p + p {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #F9DB00;
+  color: #ffffff;
   border-radius: 40px;
 }
 .a-button--type3 a,
 .a-button--type3 button {
-  background-color: #ffffff;
+  background-color: #68C1B0;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 @media (min-width: 769px) {
   .a-button--type3 a:hover,
@@ -1386,20 +1386,6 @@ p + p {
     background-color: #F9DB00;
     color: #ffffff;
   }
-}
-.a-button--type3 i {
-  display: block;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  border: 0;
-  background: url("../images/icon-arrow-01.svg") center top no-repeat;
-  background-size: contain;
-  width: 24px;
-  height: 24px;
-}
-.edge .a-button--type3 i {
-  background-size: 100% auto;
 }
 .a-button--type4 {
   border-radius: 10px;
@@ -1828,6 +1814,9 @@ p + p {
   width: 18px;
   height: 18px;
 }
+.p-request {
+  padding: 0 16px;
+}
 .p-request__progress {
   margin-bottom: 40px;
 }
@@ -1924,6 +1913,160 @@ p + p {
 }
 .p-request__textarea-check {
   margin-top: 8px;
+}
+.p-mypage {
+  padding-top: 40px;
+}
+.p-mypage-user {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 64px;
+}
+.p-mypage-user__heading {
+  display: grid;
+  grid-template-columns: 48px 1fr 40px;
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.p-mypage-user__heading-icon img {
+  width: 48px;
+  height: 48px;
+}
+.o-header__name-heading {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.p-mypage-user__heading-id {
+  font-size: 1.2rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0.03em;
+}
+.p-mypage-user__heading-id span:first-child {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 8px;
+}
+.p-mypage-user__omukae {
+  margin-bottom: 16px;
+}
+/* 見学 */
+.p-mypage-visit {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 40px;
+}
+.p-mypage-visit__heading {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+.p-mypage-visit__body {
+  background-color: #F9DB00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  border-radius: 4px;
+  padding: 16px;
+}
+.p-mypage-visit__body-title {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+}
+.p-mypage-visit__body-button a {
+  background-color: #FFFFF8;
+  font-size: 1.4rem;
+  line-height: 1.1428571429;
+  letter-spacing: 0.05em;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #333333;
+  padding: 8px 16px;
+  border-radius: 24px;
+}
+.p-mypage-seiyaku {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 40px;
+}
+.p-mypage-seiyaku a {
+  -webkit-column-gap: 8px;
+  -moz-column-gap: 8px;
+  column-gap: 8px;
+  padding: 16px;
+}
+.p-mypage-seiyaku i {
+  display: block;
+  background-image: url("../images/icon-present.svg");
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* メニュー */
+.p-mypage-nav__heading {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+.p-mypage-nav__list li {
+  border-bottom: 1px solid #E0E0E0;
+}
+.p-mypage-nav__list li:first-child {
+  border-top: 1px solid #E0E0E0;
+}
+.p-mypage-nav__list a {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: #424242;
+  padding: 16px;
+}
+.p-mypage-nav__list i {
+  display: block;
+  background-image: url("../images/icon-arrow-r.svg");
+  width: 20px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p-mypage-nav__section + .p-mypage-nav__section {
+  margin-top: 40px;
 }
 .t-layout {
   display: -webkit-box;

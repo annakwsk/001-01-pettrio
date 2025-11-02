@@ -45,7 +45,6 @@ $sp: 1024px;
   font-style: normal;
 }
 
-
 @mixin bold {
   font-weight: bold;
 }
@@ -108,6 +107,11 @@ $sp: 1024px;
 
 @mixin padding-sp($a: 56px, $b: 24) {
   padding: $a math.div($b, 375) * 100%;
+}
+
+@mixin padding($left: 16px, $right: 16px) {
+  padding-left: $left;
+  padding-right: $right;
 }
 
 /* border */
