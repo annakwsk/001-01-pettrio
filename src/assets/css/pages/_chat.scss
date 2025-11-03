@@ -84,3 +84,100 @@
   align-items: center;
   row-gap: 8px;
 }
+
+/* 個別 */
+
+.p-chat__inner {
+  @include padding;
+}
+
+.p-chat-heading {
+  @include padding;
+
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 40px 1fr 32px;
+  column-gap: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid $gray-5;
+}
+
+.p-chat-heading__user {
+  @include zenmaru;
+}
+
+.p-chat-heading__report {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  cursor: pointer;
+
+  i {
+  }
+  span {
+    @include fz(12, 12, 0.03);
+
+    color: $gray-3;
+  }
+}
+
+.p-chat-section {
+  + .p-chat-section {
+    margin-top: 40px;
+  }
+}
+
+.p-chat-section__time {
+  @include fz(14, 14, 0.03);
+
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.p-chat-section__content {
+  + .p-chat-section__content {
+    margin-top: 8px;
+  }
+}
+
+.p-chat-section__body {
+}
+
+.p-chat-section__text {
+  @include fz(16, 24, 0.03);
+
+  padding: 16px;
+  border-radius: 8px;
+
+  + .p-chat-section__text {
+    margin-top: 8px;
+  }
+}
+
+.p-chat-reception {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 16px;
+}
+
+.p-chat-reception__text {
+  @include bg($gray-6);
+
+  margin-right: math.div(32, 478) * 100%;
+}
+
+.p-chat-send__text {
+  @include bg($gray-2);
+
+  color: $white;
+  margin-left: math.div(32, 478) * 100%;
+}
+
+.p-chat-bottom {
+  @include bg($white);
+
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

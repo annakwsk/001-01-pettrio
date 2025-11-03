@@ -1930,6 +1930,93 @@ p + p {
   align-items: center;
   row-gap: 8px;
 }
+/* 個別 */
+.p-chat__inner {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.p-chat-heading {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 40px 1fr 32px;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.p-chat-heading__user {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.p-chat-heading__report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  row-gap: 8px;
+  cursor: pointer;
+}
+.p-chat-heading__report span {
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #828282;
+}
+.p-chat-section + .p-chat-section {
+  margin-top: 40px;
+}
+.p-chat-section__time {
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.p-chat-section__content + .p-chat-section__content {
+  margin-top: 8px;
+}
+.p-chat-section__text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  padding: 16px;
+  border-radius: 8px;
+}
+.p-chat-section__text + .p-chat-section__text {
+  margin-top: 8px;
+}
+.p-chat-reception {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+}
+.p-chat-reception__text {
+  background-color: #F6F6F6;
+  margin-right: 6.6945606695%;
+}
+.p-chat-send__text {
+  background-color: #4F4F4F;
+  color: #ffffff;
+  margin-left: 6.6945606695%;
+}
+.p-chat-bottom {
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
 .p-request {
   padding: 0 16px;
 }
