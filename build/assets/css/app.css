@@ -1466,6 +1466,32 @@ p + p {
   letter-spacing: 0.05em;
   text-align: center;
 }
+.a-icon {
+  background-color: #F9DB00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+}
+.a-icon span {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #424242;
+}
 .m-block-star {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1813,6 +1839,96 @@ p + p {
   background-image: url("../images/icon-mypage.svg");
   width: 18px;
   height: 18px;
+}
+.p-chat-attention {
+  width: 188px;
+  margin: 0 16px 16px auto;
+}
+.p-chat-attention a {
+  background-color: #F9DB00;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #333333;
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 8px;
+  -moz-column-gap: 8px;
+  column-gap: 8px;
+  padding: 8px 4px;
+  border: 2px solid #333333;
+  border-radius: 8px;
+}
+.p-chat-attention i {
+  display: block;
+  background-image: url("../images/icon-attention.svg");
+  width: 18px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p-chat-list__item {
+  border-bottom: 1px solid #E0E0E0;
+  margin: 0;
+}
+.p-chat-list__item:first-child {
+  border-top: 1px solid #E0E0E0;
+}
+.p-chat-list__item a {
+  display: block;
+  padding: 20px 8px 20px 16px;
+}
+.p-chat-list__time {
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #828282;
+  text-align: right;
+}
+.p-chat-list__body {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+}
+.p-chat-list__user {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #424242;
+  margin-bottom: 8px;
+}
+.p-chat-list__text {
+  font-size: 1.3rem;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #828282;
+}
+.p-chat-list__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  row-gap: 8px;
 }
 .p-request {
   padding: 0 16px;

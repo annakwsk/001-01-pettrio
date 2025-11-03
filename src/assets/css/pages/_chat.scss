@@ -1,0 +1,86 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.p-chat-attention {
+  width: 188px;
+  margin: 0 16px 16px auto;
+
+  a {
+    @include bg($yellow);
+    @include zenmaru;
+    @include fz(14, 14, 0.05);
+
+    color: $gray;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    padding: 8px 4px;
+    border: 2px solid $gray;
+    border-radius: 8px;
+  }
+
+  i {
+    display: block;
+    background-image: url("../images/icon-attention.svg");
+    width: 18px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.p-chat-list__item {
+  border-bottom: 1px solid $gray-5;
+  margin: 0;
+
+  + .p-chat-list__item {
+  }
+
+  &:first-child {
+    border-top: 1px solid $gray-5;
+  }
+
+  a {
+    display: block;
+    padding: 20px 8px 20px 16px;
+  }
+}
+
+.p-chat-list__time {
+  @include fz(12, 12, 0.03);
+
+  color: $gray-3;
+  text-align: right;
+}
+
+.p-chat-list__body {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  align-items: flex-start;
+  column-gap: 16px;
+}
+
+.p-chat-list__content {
+}
+
+.p-chat-list__user {
+  @include zenmaru;
+  @include fz(18, 18, 0.05);
+
+  color: $black;
+  margin-bottom: 8px;
+}
+
+.p-chat-list__text {
+  @include fz(13, 13, 0.03);
+
+  color: $gray-3;
+}
+
+.p-chat-list__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}

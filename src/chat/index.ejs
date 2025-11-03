@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'チャット'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper t-layout">
+      <div class="t-layout__inner">
+        <%- include("../_header-login"); %>
+        <div class="t-layout__content">
+          <main class="p-chat">
+            <!-- heading -->
+            <div class="t-layout__heading">
+              <div class="t-layout__heading-title">チャット</div>
+            </div>
+            <!-- /heading -->
+            <div>
+              <div class="p-chat-attention">
+                <a href=""> <i></i><span>チャットでの禁止事項</span> </a>
+              </div>
+
+              <ul class="p-chat-list">
+                <li class="p-chat-list__item">
+                  <a href="">
+                    <div class="p-chat-list__body">
+                      <div class="p-chat-list__icon"><img src="../assets/images/img-user.svg" alt="Pettrio" /></div>
+                      <div class="p-chat-list__content">
+                        <div class="p-chat-list__user">suzuki</div>
+                        <div class="p-chat-list__text">先日は見学にお越しいただき、ありがとうございまし…</div>
+                      </div>
+                      <div class="p-chat-list__info">
+                        <div class="p-chat-list__time">23:08</div>
+                        <div class="p-chat-list__notice a-icon">
+                          <span> 1 </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="p-chat-list__item">
+                  <a href="">
+                    <div class="p-chat-list__body">
+                      <div class="p-chat-list__icon"><img src="../assets/images/img-user.svg" alt="Pettrio" /></div>
+                      <div class="p-chat-list__content">
+                        <div class="p-chat-list__user">naito</div>
+                        <div class="p-chat-list__text">先日は見学にお越しいただき、ありがとうございまし…</div>
+                      </div>
+                      <div class="p-chat-list__info">
+                        <div class="p-chat-list__time">23:08</div>
+                        <div class="p-chat-list__notice a-icon">
+                          <span> 1 </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="p-chat-list__item">
+                  <a href="">
+                    <div class="p-chat-list__body">
+                      <div class="p-chat-list__icon"><img src="../assets/images/img-user.svg" alt="Pettrio" /></div>
+                      <div class="p-chat-list__content">
+                        <div class="p-chat-list__user">シーガル【運営】</div>
+                        <div class="p-chat-list__text">先日は見学にお越しいただき、ありがとうございまし…</div>
+                      </div>
+                      <div class="p-chat-list__info">
+                        <div class="p-chat-list__time">23:08</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </main>
+        </div>
+        <%- include("../_footer"); %>
+      </div>
+    </div>
+  </body>
+</html>
