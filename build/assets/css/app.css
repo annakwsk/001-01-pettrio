@@ -2017,6 +2017,56 @@ p + p {
   position: fixed;
   bottom: 0;
 }
+.p-faq__inner {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.p-faq-list__item {
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 24px;
+}
+.p-faq-list__item + .p-faq-list__item {
+  margin-top: 24px;
+}
+.p-faq-list__item span {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.p-faq-list__heading {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+}
+.p-faq-list__q {
+  margin-bottom: 16px;
+}
+.p-faq-list__q span {
+  color: #F9DB00;
+}
+.p-faq-list__q-text {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+.p-faq-list__a span {
+  color: #68C1B0;
+}
+.p-faq-list__a-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
 .p-request {
   padding: 0 16px;
 }

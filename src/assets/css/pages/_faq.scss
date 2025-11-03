@@ -1,0 +1,54 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.p-faq__inner {
+  @include padding;
+}
+
+.p-faq-list {
+}
+
+.p-faq-list__item {
+  @include padding;
+
+  border-bottom: 1px solid $gray-5;
+  padding-bottom: 24px;
+
+  + .p-faq-list__item {
+    margin-top: 24px;
+  }
+
+  span {
+    @include zenkaku(700);
+    @include fz(20, 20, 0.05);
+  }
+}
+
+.p-faq-list__heading {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  column-gap: 16px;
+}
+
+.p-faq-list__q {
+  margin-bottom: 16px;
+
+  span {
+    color: $yellow;
+  }
+}
+
+.p-faq-list__q-text {
+  @include zenkaku(700);
+  @include fz(16, 24, 0.05);
+}
+
+.p-faq-list__a {
+  span {
+    color: $green;
+  }
+}
+
+.p-faq-list__a-text {
+  @include fz(16, 24, 0.05);
+}
