@@ -877,10 +877,12 @@ figure,
 blockquote,
 dl,
 dd,
-ul {
+ul,
+ol {
   margin: 0;
 }
-ul {
+ul,
+ol {
   padding: 0;
 }
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -947,16 +949,16 @@ button {
 progress {
   -webkit-appearance: none; /* プログレスバーのスタイルをリセット */
   -moz-appearance: none; /* プログレスバーのスタイルをリセット */
-  background-color: #F6F6F6; /* プログレスバーの背景色/-moz- 用 */
+  background-color: #f6f6f6; /* プログレスバーの背景色/-moz- 用 */
 }
 ::-webkit-progress-bar {
-  background-color: #F6F6F6; /* プログレスバーの背景色/-webkit- 用 */
+  background-color: #f6f6f6; /* プログレスバーの背景色/-webkit- 用 */
 }
 ::-webkit-progress-value {
-  background-color: #F9DB00; /* プログレスバーの進捗部分色/-webkit- 用 */
+  background-color: #f9db00; /* プログレスバーの進捗部分色/-webkit- 用 */
 }
 ::-moz-progress-bar {
-  background-color: #F9DB00; /* プログレスバーの進捗部分色/-moz- 用 */
+  background-color: #f9db00; /* プログレスバーの進捗部分色/-moz- 用 */
 }
 /* Variables
 //
@@ -2320,6 +2322,36 @@ p + p {
 }
 .p-mypage-nav__section + .p-mypage-nav__section {
   margin-top: 40px;
+}
+.p-policy__inner {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.p-policy__section + .p-policy__section {
+  margin-top: 40px;
+}
+.p-policy__heading {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+.p-policy__body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+.p-policy-list li {
+  list-style-type: decimal;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+.p-policy-list__list li {
+  list-style-type: lower-latin;
 }
 .t-layout {
   display: -webkit-box;

@@ -1,0 +1,38 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.p-policy__inner {
+  @include padding;
+}
+
+.p-policy__section {
+  + .p-policy__section {
+    margin-top: 40px;
+  }
+}
+
+.p-policy__heading {
+  @include zenmaru;
+  @include fz(20, 24, 0.05);
+
+  margin-bottom: 16px;
+}
+
+.p-policy__body {
+  @include fz(16, 24, 0.05);
+}
+
+.p-policy-list {
+  li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+}
+
+.p-policy-list__list {
+  li {
+    list-style-type: lower-latin;
+  }
+}

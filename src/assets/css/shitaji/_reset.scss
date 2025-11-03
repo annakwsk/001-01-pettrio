@@ -16,11 +16,13 @@ figure,
 blockquote,
 dl,
 dd,
-ul {
+ul,
+ol {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   padding: 0;
 }
 
@@ -90,14 +92,14 @@ button {
 progress {
   -webkit-appearance: none; /* プログレスバーのスタイルをリセット */
   -moz-appearance: none; /* プログレスバーのスタイルをリセット */
-  background-color: #F6F6F6; /* プログレスバーの背景色/-moz- 用 */
+  background-color: #f6f6f6; /* プログレスバーの背景色/-moz- 用 */
 }
 ::-webkit-progress-bar {
-  background-color: #F6F6F6; /* プログレスバーの背景色/-webkit- 用 */
+  background-color: #f6f6f6; /* プログレスバーの背景色/-webkit- 用 */
 }
 ::-webkit-progress-value {
-  background-color: #F9DB00; /* プログレスバーの進捗部分色/-webkit- 用 */
+  background-color: #f9db00; /* プログレスバーの進捗部分色/-webkit- 用 */
 }
 ::-moz-progress-bar {
-  background-color: #F9DB00; /* プログレスバーの進捗部分色/-moz- 用 */
+  background-color: #f9db00; /* プログレスバーの進捗部分色/-moz- 用 */
 }
