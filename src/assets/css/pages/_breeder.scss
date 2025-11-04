@@ -1,0 +1,26 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.p-breeder-profile__heading {
+  grid-template-columns: 48px 1fr 96px;
+}
+
+.p-breeder-profile__button {
+  @include fz(14, 24, 0.05);
+
+  a {
+    padding: 8px;
+  }
+}
+
+.p-breeder__list {
+  margin-top: 40px;
+}
+
+.p-breeder__button {
+  margin-top: 64px;
+
+  a {
+    padding: 16px;
+  }
+}

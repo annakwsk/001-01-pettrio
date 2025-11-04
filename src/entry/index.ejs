@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'エントリー'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper t-layout">
+      <div class="t-layout__inner">
+        <%- include("../_header"); %>
+        <div class="t-layout__content">
+          <!-- heading -->
+          <div class="t-layout__heading">
+            <div class="t-layout__heading-title">エントリー</div>
+          </div>
+          <!-- /heading -->
+
+          <main class="p-entry">
+            <div class="p-entry__inner">
+              <div class="p-entry__heading">
+                <i></i>
+                <div class="p-entry__heading-text">ブリーダーからのエントリーが <span>2件</span> あります</div>
+              </div>
+              <div class="p-entry__content">
+                <div>現在のリクエスト</div>
+              </div>
+            </div>
+            <div class="p-entry__button">
+              <div class="a-button--type1 p-request__next">
+                <a href="index-02.html"> 次へ </a>
+              </div>
+            </div>
+          </main>
+        </div>
+        <%- include("../_footer"); %>
+      </div>
+    </div>
+  </body>
+</html>

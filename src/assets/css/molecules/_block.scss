@@ -1,6 +1,8 @@
 @use "sass:math";
 @use "../shitaji" as *;
 
+/* 星 */
+
 .m-block-star {
   @include flex(flex-start, center, nowrap);
 
@@ -70,4 +72,14 @@
   @include fz(16, 24, 0.05);
 
   margin-bottom: 40px;
+}
+
+.m-block-textlist {
+  li {
+    @include fz(16, 24, 0.05);
+  }
+
+  span {
+    @include zenkaku(700);
+  }
 }

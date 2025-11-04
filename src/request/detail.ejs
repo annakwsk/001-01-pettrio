@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'リクエスト'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper t-layout">
+      <div class="t-layout__inner">
+        <%- include("../_header-login"); %>
+        <div class="t-layout__content">
+          <!-- heading -->
+          <div class="t-layout__heading">
+            <a href="#" onclick="history.back()" return false;><i></i> </a>
+            <div class="t-layout__heading-title">リクエスト</div>
+          </div>
+          <!-- /heading -->
+
+          <main class="p-request-detail">
+            <div class="p-request-detail__inner">
+              <div class="p-request-detail__heading"><span>リクエストID: </span>djsp7df9</div>
+              <ul class="p-request-detail__list">
+                <li class="p-request-detail__item">
+                  <div class="p-request-detail__item-heading">犬種</div>
+                  <div class="p-request-detail__item-body">トイプードル,チワワ</div>
+                </li>
+                <li class="p-request-detail__item">
+                  <div class="p-request-detail__item-heading">毛色</div>
+                  <div class="p-request-detail__item-body">黒,茶色</div>
+                </li>
+                <li class="p-request-detail__item">
+                  <div class="p-request-detail__item-heading">性別</div>
+                  <div class="p-request-detail__item-body">女の子</div>
+                </li>
+                <li class="p-request-detail__item">
+                  <div class="p-request-detail__item-heading">ご予算</div>
+                  <div class="p-request-detail__item-body">下限なし〜20万円</div>
+                </li>
+                <li class="p-request-detail__item">
+                  <div class="p-request-detail__item-heading">お迎え時期</div>
+                  <div class="p-request-detail__item-body">良い縁があれば</div>
+                </li>
+                <li class="p-request-detail__item">
+                  <div class="p-request-detail__item-heading">お迎え場所</div>
+                  <div class="p-request-detail__item-body">北海道</div>
+                </li>
+                <li class="p-request-detail__item">
+                  <div class="p-request-detail__item-heading">ブリーダーの人数</div>
+                  <div class="p-request-detail__item-body">最大5名</div>
+                </li>
+                <li class="p-request-detail__item">
+                  <div class="p-request-detail__item-heading">その他ご要望</div>
+                  <div class="p-request-detail__item-body">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+                </li>
+              </ul>
+            </div>
+            <div class="p-request-detail__button">
+              <div class="a-button--type1 p-request-detail__entry">
+                <a href="../entry/"> エントリーを見る </a>
+              </div>
+              <div class="p-request-detail__textlink">
+                <a href="" class="link">犬種を変更する</a>
+                <div class="note">新規リクエストはこちらです。</div>
+              </div>
+              <div class="p-request-detail__textlink">
+                <a href="" class="link">リクエストの条件変更する</a>
+                <div class="note">犬種の追加を含む条件変更はこちらです。</div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <%- include("../_footer"); %>
+      </div>
+    </div>
+  </body>
+</html>

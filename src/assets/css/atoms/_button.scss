@@ -91,11 +91,11 @@
 }
 
 .a-button--type4 {
-  @include button($yellow);
+  @include button($white);
 
   a,
   button {
-    @include bg($white);
+    @include bg($gray);
     @media (--lg) {
       &:hover {
         @include bg($yellow);

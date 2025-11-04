@@ -5,47 +5,8 @@
   padding-top: 40px;
 }
 
-.p-mypage-user {
-  @include padding;
-
-  margin-bottom: 64px;
-}
-
-.p-mypage-user__heading {
-  display: grid;
+.p-mypage__heading {
   grid-template-columns: 48px 1fr 40px;
-  column-gap: 24px;
-  align-items: center;
-  margin-bottom: 24px;
-}
-
-.p-mypage-user__heading-icon {
-  img {
-    width: 48px;
-    height: 48px;
-  }
-}
-
-.o-header__name-heading {
-  @include fz(16, 20, 0.05);
-
-  margin-bottom: 4px;
-}
-
-.p-mypage-user__heading-id {
-  @include fz(12, 16, 0.03);
-
-  span {
-    &:first-child {
-      @include zenkaku(700);
-
-      margin-right: 8px;
-    }
-  }
-}
-
-.p-mypage-user__omukae {
-  margin-bottom: 16px;
 }
 
 /* 見学 */

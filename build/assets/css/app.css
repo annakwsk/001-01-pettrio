@@ -1409,12 +1409,12 @@ p + p {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #F9DB00;
+  color: #ffffff;
   border-radius: 40px;
 }
 .a-button--type4 a,
 .a-button--type4 button {
-  background-color: #ffffff;
+  background-color: #333333;
 }
 @media (min-width: 769px) {
   .a-button--type4 a:hover,
@@ -1494,6 +1494,7 @@ p + p {
   letter-spacing: 0.05em;
   color: #424242;
 }
+/* 星 */
 .m-block-star {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1579,6 +1580,16 @@ p + p {
   line-height: 1.5;
   letter-spacing: 0.05em;
   margin-bottom: 40px;
+}
+.m-block-textlist li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+.m-block-textlist span {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .o-accordion {
   border-bottom: 1px solid #F9DB00;
@@ -1842,6 +1853,69 @@ p + p {
   width: 18px;
   height: 18px;
 }
+.o-profile {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 64px;
+}
+.o-profile__heading {
+  display: grid;
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.o-profile__heading-icon img {
+  width: 48px;
+  height: 48px;
+}
+.o-profile__name-heading {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.o-profile__heading-id {
+  font-size: 1.2rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0.03em;
+}
+.o-profile__heading-id span:first-child {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 8px;
+}
+.o-profile__star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-column-gap: 8px;
+  -moz-column-gap: 8px;
+  column-gap: 8px;
+}
+.o-profile__star-text {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.2307692308;
+  letter-spacing: 0.03em;
+}
+.o-profile__text {
+  margin-top: 24px;
+}
 .p-chat-attention {
   width: 188px;
   margin: 0 16px 16px auto;
@@ -2019,6 +2093,26 @@ p + p {
   position: fixed;
   bottom: 0;
 }
+.p-breeder-profile__heading {
+  grid-template-columns: 48px 1fr 96px;
+}
+.p-breeder-profile__button {
+  font-size: 1.4rem;
+  line-height: 1.7142857143;
+  letter-spacing: 0.05em;
+}
+.p-breeder-profile__button a {
+  padding: 8px;
+}
+.p-breeder__list {
+  margin-top: 40px;
+}
+.p-breeder__button {
+  margin-top: 64px;
+}
+.p-breeder__button a {
+  padding: 16px;
+}
 .p-faq__inner {
   padding-left: 16px;
   padding-right: 16px;
@@ -2169,48 +2263,46 @@ p + p {
 .p-request__textarea-check {
   margin-top: 8px;
 }
-.p-mypage {
-  padding-top: 40px;
+/* リクエスト詳細 */
+.p-request-detail__inner {
+  margin-bottom: 40px;
 }
-.p-mypage-user {
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-bottom: 64px;
-}
-.p-mypage-user__heading {
-  display: grid;
-  grid-template-columns: 48px 1fr 40px;
-  -webkit-column-gap: 24px;
-  -moz-column-gap: 24px;
-  column-gap: 24px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.p-request-detail__heading {
   margin-bottom: 24px;
 }
-.p-mypage-user__heading-icon img {
-  width: 48px;
-  height: 48px;
-}
-.o-header__name-heading {
-  font-size: 1.6rem;
-  line-height: 1.25;
-  letter-spacing: 0.05em;
-  margin-bottom: 4px;
-}
-.p-mypage-user__heading-id {
-  font-size: 1.2rem;
-  line-height: 1.3333333333;
-  letter-spacing: 0.03em;
-}
-.p-mypage-user__heading-id span:first-child {
+.p-request-detail__heading span {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
   font-style: normal;
-  margin-right: 8px;
 }
-.p-mypage-user__omukae {
-  margin-bottom: 16px;
+.p-request-detail {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.p-request-detail__item {
+  font-size: 1.4rem;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+.p-request-detail__item-heading {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.p-request-detail__entry a {
+  padding: 16px;
+}
+.p-request-detail__textlink {
+  text-align: center;
+  margin-top: 24px;
+}
+.p-mypage {
+  padding-top: 40px;
+}
+.p-mypage__heading {
+  grid-template-columns: 48px 1fr 40px;
 }
 /* 見学 */
 .p-mypage-visit {

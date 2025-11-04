@@ -1,0 +1,55 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.o-profile {
+  @include padding;
+
+  margin-bottom: 64px;
+}
+
+.o-profile__heading {
+  display: grid;
+  column-gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.o-profile__heading-icon {
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.o-profile__name-heading {
+  @include fz(16, 20, 0.05);
+
+  margin-bottom: 4px;
+}
+
+.o-profile__heading-id {
+  @include fz(12, 16, 0.03);
+
+  span {
+    &:first-child {
+      @include zenkaku(700);
+
+      margin-right: 8px;
+    }
+  }
+}
+
+.o-profile__star {
+  @include flex(flex-start, center, nowrap);
+
+  column-gap: 8px;
+}
+
+.o-profile__star-text {
+  @include zenkaku(700);
+  @include fz(13, 16, 0.03);
+}
+
+.o-profile__text {
+  margin-top: 24px;
+}

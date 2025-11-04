@@ -113,3 +113,43 @@
 .p-request__textarea-check {
   margin-top: 8px;
 }
+
+/* リクエスト詳細 */
+
+.p-request-detail__inner {
+  margin-bottom: 40px;
+}
+
+.p-request-detail__heading {
+  margin-bottom: 24px;
+
+  span {
+    @include zenkaku(700);
+  }
+}
+
+.p-request-detail {
+  @include padding;
+}
+
+.p-request-detail__item {
+  @include fz(14, 24, 0.03);
+
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+
+.p-request-detail__item-heading {
+  @include zenkaku(700);
+}
+
+.p-request-detail__entry {
+  a {
+    padding: 16px;
+  }
+}
+
+.p-request-detail__textlink {
+  text-align: center;
+  margin-top: 24px;
+}
