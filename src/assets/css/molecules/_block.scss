@@ -83,3 +83,41 @@
     @include zenkaku(700);
   }
 }
+
+/* 黄色（見学） */
+
+.m-block-yellow {
+  margin-bottom: 40px;
+}
+
+.m-block-yellow__heading {
+  @include zenmaru;
+
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+
+.m-block-yellow__body {
+  @include bg($yellow);
+  @include flex(space-between, center, nowrap);
+
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.m-block-yellow__body-title {
+  @include zenkaku(700);
+  @include fz(16, 20, 0.05);
+}
+
+.m-block-yellow__body-button {
+  a {
+    @include bg($yellow-3);
+    @include fz(14, 16, 0.05);
+    @include zenkaku(700);
+
+    color: $gray;
+    padding: 8px 16px;
+    border-radius: 24px;
+  }
+}

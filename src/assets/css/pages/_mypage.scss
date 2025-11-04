@@ -11,42 +11,8 @@
 
 /* 見学 */
 
-.p-mypage-visit {
+.p-mypage-yellow {
   @include padding;
-
-  margin-bottom: 40px;
-}
-
-.p-mypage-visit__heading {
-  @include zenmaru;
-
-  margin-bottom: 8px;
-  padding-left: 16px;
-}
-
-.p-mypage-visit__body {
-  @include bg($yellow);
-  @include flex(space-between, center, nowrap);
-
-  border-radius: 4px;
-  padding: 16px;
-}
-
-.p-mypage-visit__body-title {
-  @include zenkaku(700);
-  @include fz(16, 20, 0.05);
-}
-
-.p-mypage-visit__body-button {
-  a {
-    @include bg($yellow-3);
-    @include fz(14, 16, 0.05);
-    @include zenkaku(700);
-
-    color: $gray;
-    padding: 8px 16px;
-    border-radius: 24px;
-  }
 }
 
 .p-mypage-seiyaku {

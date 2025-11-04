@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: '村田倫子'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper t-layout">
+      <div class="t-layout__inner">
+        <%- include("../_header-login"); %>
+        <div class="t-layout__content">
+          <!-- heading -->
+          <div class="t-layout__heading">
+            <a href="#" onclick="history.back()" return false;><i></i> </a>
+          </div>
+          <!-- /heading -->
+
+          <main class="p-breeder">
+            <!-- ユーザー情報 -->
+            <div class="o-profile p-breeder-profile">
+              <div class="o-profile__heading p-breeder-profile__heading">
+                <div class="o-profile__heading-icon">
+                  <img src="../assets/images/img-user.svg" alt="Pettrio" />
+                </div>
+
+                <div>
+                  <div class="o-profile__heading-name">村田倫子</div>
+                  <div class="o-profile__heading-id">
+                    <span>ブリーダーID</span>
+                    <span>1345663</span>
+                  </div>
+                </div>
+
+                <div class="a-button--type1 p-breeder-profile__button"><a href="../chat/index-02.html">チャット</a></div>
+              </div>
+
+              <div class="o-profile__star">
+                <div class="m-block-star">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="def"></span>
+                </div>
+                <div class="o-profile__star-text">12</div>
+              </div>
+
+              <div class="o-profile__text">はじめまして。トイプードルを主に取り扱っています。元気いっぱいな子犬を見に来てね。</div>
+
+              <!-- 見学 -->
+              <div class="m-block-yellow p-breeder-yellow">
+                <div class="m-block-yellow__body">
+                  <div class="">
+                    <div class="m-block-yellow__body-title">見学お申し込み中</div>
+                    <div class="m-block-yellow__body-date">2025年1月1日 11:00〜</div>
+                  </div>
+                  <div class="m-block-yellow__body-button">
+                    <a href="">キャンセルする</a>
+                  </div>
+                </div>
+                <div class="p-breeder-yellow__note">
+                  見学の前日までこのページからキャンセルが可能です。<br />
+                  当日のキャンセルは、直接ブリーダーへお問い合わせください。
+                </div>
+              </div>
+              <!-- /見学 -->
+
+              <ul class="m-block-textlist p-breeder__list">
+                <li><span>ブリーダー名: </span>村田倫子</li>
+                <li><span>フリガナ: </span>ムラタリンコ</li>
+                <li><span>動物取扱業登録番号: </span>123458221478</li>
+                <li><span>犬・猫舎名: </span>dog care Step</li>
+                <li><span>ジャンル: </span>小型犬</li>
+                <li><span>対応犬種: </span>ブルドッグ,ミニチュアダックス</li>
+                <li><span>公開住所: </span>福岡県福岡市早良区</li>
+                <li><span>営業時間: </span>10：00～17：00</li>
+                <li><span>休日: </span>土・日・祝日</li>
+              </ul>
+
+              <ul class="m-block-textlist p-breeder__list">
+                <li class="p-breeder__list-heading">見学場所　住所</li>
+                <li><span>郵便番号: </span>8140000</li>
+                <li><span>住所: </span>福岡県福岡市早良区脇山2340-6 ウルトラビル 1F</li>
+                <li><span>営業時間: </span>10：00～17：00</li>
+                <li><span>休業日: </span>土·日·祝日</li>
+                <li><span>電話番号: </span>090-4343-6884</li>
+                <li><span>メールアドレス: </span>dog.care.step-0708@docomo.ne.jp</li>
+              </ul>
+
+              <div class="a-button--type4 p-breeder__button">
+                <a href=""> リクエストからの退出を依頼する </a>
+              </div>
+            </div>
+            <!-- /ユーザー情報 -->
+          </main>
+        </div>
+        <%- include("../_footer"); %>
+      </div>
+    </div>
+  </body>
+</html>

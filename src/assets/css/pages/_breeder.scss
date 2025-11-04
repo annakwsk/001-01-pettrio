@@ -24,3 +24,20 @@
     padding: 16px;
   }
 }
+
+.p-breeder__list-heading {
+  @include zenkaku(700);
+
+  margin-bottom: 8px;
+}
+
+.p-breeder-yellow {
+  margin-top: 40px;
+}
+
+.p-breeder-yellow__note {
+  @include fz(13, 18, 0.05);
+
+  text-align: center;
+  margin-top: 16px;
+}
