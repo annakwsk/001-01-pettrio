@@ -2316,7 +2316,7 @@ p + p {
   margin-top: 40px;
 }
 .p-request__textarea-heading {
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 .p-request__textarea-body {
   font-size: 1.3rem;
@@ -2324,7 +2324,13 @@ p + p {
   letter-spacing: 0.03em;
 }
 .p-request__textarea-check {
-  margin-top: 8px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 16px;
 }
 /* リクエスト詳細 */
 .p-request-detail__inner {

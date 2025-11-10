@@ -16,55 +16,92 @@
           <!-- heading -->
           <div class="t-layout__heading">
             <a href="index-10.html"><i></i></a>
-            <div class="t-layout__heading-title">条件リクエスト</div>
+            <div class="t-layout__heading-title">アカウント登録</div>
           </div>
           <!-- /heading -->
 
           <main class="p-request">
             <div class="p-request__progress">
-              <div class="p-request__progress-caption">80%完了</div>
+              <div class="p-request__progress-caption">90%完了</div>
               <progress max="100" value="80"></progress>
             </div>
             <div class="p-request__main">
-              <div class="p-request__title">リクエスト内容をご確認ください。</div>
-              <ul class="p-request__confirmation m-block-confirmation">
-                <li>
-                  <div class="m-block-confirmation__heading">犬種検索</div>
-                  <div class="m-block-confirmation__body">初めての方にオススメ</div>
-                </li>
-                <li>
-                  <div class="m-block-confirmation__heading">犬種</div>
-                  <div class="m-block-confirmation__body">チワワ,トイプードル,ミニチュアプードル</div>
-                </li>
-                <li>
-                  <div class="m-block-confirmation__heading">毛色</div>
-                  <div class="m-block-confirmation__body">黒</div>
-                </li>
-                <li>
-                  <div class="m-block-confirmation__heading">性別</div>
-                  <div class="m-block-confirmation__body">女の子</div>
-                </li>
-                <li>
-                  <div class="m-block-confirmation__heading">ご予算</div>
-                  <div class="m-block-confirmation__body">下限なし〜20万円</div>
-                </li>
-                <li>
-                  <div class="m-block-confirmation__heading">お迎え時期</div>
-                  <div class="m-block-confirmation__body">良い縁があれば</div>
-                </li>
-                <li>
-                  <div class="m-block-confirmation__heading">お迎え場所</div>
-                  <div class="m-block-confirmation__body">北海道</div>
-                </li>
-                <li>
-                  <div class="m-block-confirmation__heading">ブリーダーの人数</div>
-                  <div class="m-block-confirmation__body">最大5名</div>
-                </li>
-                <li>
-                  <div class="m-block-confirmation__heading">その他ご要望</div>
-                  <div class="m-block-confirmation__body">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-                </li>
-              </ul>
+              <div class="p-request__title">アカウント登録（無料）を行います。<br /><span class="note"> *は必須項目です。 </span></div>
+              <section class="p-request__section o-form">
+                <div class="p-request__title">お客様について</div>
+                <ul class="p-request__section-list">
+                  <li class="o-form__item">
+                    <div class="o-form__heading">*お名前</div>
+                    <input type="text" name="お名前" />
+                  </li>
+                  <li class="o-form__item">
+                    <div class="o-form__heading">*お名前（フリガナ）</div>
+                    <input type="text" name="お名前（フリガナ）" />
+                  </li>
+                  <li class="o-form__item">
+                    <div class="o-form__heading">*性別</div>
+                    <ul class="p-request__radio">
+                      <li>
+                        <label><input type="radio" name="性別" value="女性" class="js-checkbox-01" />女性</label>
+                      </li>
+                      <li>
+                        <label><input type="radio" name="性別" value="男性" class="js-checkbox-01" />男性</label>
+                      </li>
+                      <li>
+                        <label><input type="radio" name="性別" value="回答しない" class="js-checkbox-01" />回答しない</label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="o-form__item">
+                    <div class="o-form__heading">*ご年齢</div>
+                    <select type="number" name="ご年齢" id="js-form-select-07">
+                      <option value="none">選択する</option>
+                      <option value="10代">10代</option>
+                      <option value="20代">20代</option>
+                      <option value="30代">30代</option>
+                      <option value="40代">40代</option>
+                      <option value="50代">50代</option>
+                      <option value="60代">60代</option>
+                      <option value="70代以上">70代以上</option>
+                    </select>
+                    <div class="note">※未成年の方はご利用できません。</div>
+                  </li>
+                  <li class="o-form__item">
+                    <div class="o-form__heading">*ご自宅（お住まい）の郵便番号</div>
+                    <input type="text" name="郵便番号" placeholder="ハイフン不要" />
+                  </li>
+                </ul>
+              </section>
+
+              <section class="p-request__section o-form">
+                <div class="p-request__title">*ペットの飼育について</div>
+                <ul class="o-form__list">
+                  <li class="o-form__item">
+                    <div class="o-form__heading">犬の飼育経験</div>
+                    <ul class="p-request__radio">
+                      <li>
+                        <label><input type="radio" name="犬・猫の飼育経験" value="あり" class="js-checkbox-01" />あり</label>
+                      </li>
+                      <li>
+                        <label><input type="radio" name="犬・猫の飼育経験" value="なし" class="js-checkbox-01" />なし</label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="o-form__item">
+                    <div class="o-form__heading">*飼育経験年数</div>
+                    <input type="text" name="飼育経験年数" /> 年
+                  </li>
+                  <li class="o-form__item">
+                    <div class="o-form__heading">*飼育犬種</div>
+                    <input type="text" name="飼育犬種" />
+                  </li>
+                  <li class="o-form__item">
+                    <div class="o-form__heading">ブリーダーへのメッセージ（自己紹介）</div>
+                    <textarea type="text" name="ブリーダーへのメッセージ（自己紹介）" placeholder="はじめまして。今プードルと暮らしていて、2匹目のわんこを探しています。" rows="6" cols="50"></textarea>
+                    <div class="note">※いつでも変更できます。</div>
+                  </li>
+                </ul>
+              </section>
             </div>
 
             <div class="p-request__button">

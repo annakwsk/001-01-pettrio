@@ -16,7 +16,6 @@
           <!-- heading -->
           <div class="t-layout__heading">
             <a href="index-03.html"><i></i></a>
-
             <div class="t-layout__heading-title">条件リクエスト</div>
           </div>
           <!-- /heading -->
@@ -27,16 +26,23 @@
               <progress max="100" value="30"></progress>
             </div>
             <div class="p-request__main">
-              <div class="p-request__title">性別</div>
-              <ul class="p-request__radio">
+              <div class="p-request__title">毛色</div>
+              <ul class="p-request__checkbox">
                 <li>
-                  <label><input type="radio" name="性別" value="男の子" class="js-radio-02" />男の子</label>
+                  <label><input type="checkbox" name="毛色-1" value="赤" class="js-checkbox-01" />赤</label>
                 </li>
                 <li>
-                  <label><input type="radio" name="性別" value="女の子" class="js-radio-02" />女の子</label>
+                  <label><input type="checkbox" name="毛色-2" value="茶" class="js-checkbox-01" />茶</label>
                 </li>
                 <li>
-                  <label><input type="radio" name="性別" value="こだわりなし" class="js-radio-02" />こだわりなし</label>
+                  <label><input type="checkbox" name="毛色-3" value="グレー" class="js-checkbox-01" />グレー</label>
+                </li>
+                <li>
+                  <label><input type="checkbox" name="毛色-4" value="黒" class="js-checkbox-01" />黒</label>
+                </li>
+                <li class="o-form__item">
+                  <div>備考欄（その他の毛色を指定する場合もこちらに入力ください）</div>
+                  <input type="text" name="毛色" style="ime-mode: disabled" placeholder="ご希望の毛色を入力ください" class="js-radio-05" />
                 </li>
               </ul>
             </div>

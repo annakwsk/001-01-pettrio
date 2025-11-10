@@ -22,83 +22,27 @@
 
           <main class="p-request">
             <div class="p-request__progress">
-              <div class="p-request__progress-caption">90%完了</div>
-              <progress max="100" value="80"></progress>
+              <div class="p-request__progress-caption">95%完了</div>
+              <progress max="100" value="95"></progress>
             </div>
             <div class="p-request__main">
-              <div class="p-request__title">アカウント登録（無料）を行います。<br /><span class="note"> *は必須項目です。 </span></div>
+              <div class="p-request__title">アカウント登録（無料）を行います。<br />ログインに使用する情報を入力してください。</div>
               <section class="p-request__section o-form">
-                <div class="p-request__title">お客様について</div>
                 <ul class="p-request__section-list">
                   <li class="o-form__item">
-                    <div class="o-form__heading">*お名前</div>
-                    <input type="text" name="お名前" />
+                    <div class="o-form__heading">メールアドレス</div>
+                    <input
+                      type="email"
+                      name="メールアドレス"
+                      style="ime-mode: disabled"
+                      pattern=".+@.+\..+"
+                      title="メールアドレスは、aaa@example.com のような形式で記入してください。"
+                      autocomplete="email"
+                    />
                   </li>
                   <li class="o-form__item">
-                    <div class="o-form__heading">*お名前（フリガナ）</div>
-                    <input type="text" name="お名前（フリガナ）" />
-                  </li>
-                  <li class="o-form__item">
-                    <div class="o-form__heading">*性別</div>
-                    <ul class="p-request__radio">
-                      <li>
-                        <label><input type="radio" name="性別" value="女性" class="js-checkbox-01" />女性</label>
-                      </li>
-                      <li>
-                        <label><input type="radio" name="性別" value="男性" class="js-checkbox-01" />男性</label>
-                      </li>
-                      <li>
-                        <label><input type="radio" name="性別" value="回答しない" class="js-checkbox-01" />回答しない</label>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="o-form__item">
-                    <div class="o-form__heading">*ご年齢</div>
-                    <select type="number" name="ご年齢" id="js-form-select-07">
-                      <option value="none">選択する</option>
-                      <option value="10代">10代</option>
-                      <option value="20代">20代</option>
-                      <option value="30代">30代</option>
-                      <option value="40代">40代</option>
-                      <option value="50代">50代</option>
-                      <option value="60代">60代</option>
-                      <option value="70代以上">70代以上</option>
-                    </select>
-                    <div class="note">※未成年の方はご利用できません。</div>
-                  </li>
-                  <li class="o-form__item">
-                    <div class="o-form__heading">*郵便番号（ハイフンなし）</div>
-                    <input type="text" name="郵便番号" />
-                  </li>
-                </ul>
-              </section>
-
-              <section class="p-request__section o-form">
-                <div class="p-request__title">*ペットの飼育について</div>
-                <ul class="o-form__list">
-                  <li class="o-form__item">
-                    <div class="o-form__heading">犬の飼育経験</div>
-                    <ul class="p-request__radio">
-                      <li>
-                        <label><input type="radio" name="犬・猫の飼育経験" value="あり" class="js-checkbox-01" />あり</label>
-                      </li>
-                      <li>
-                        <label><input type="radio" name="犬・猫の飼育経験" value="なし" class="js-checkbox-01" />なし</label>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="o-form__item">
-                    <div class="o-form__heading">*飼育経験年数</div>
-                    <input type="text" name="飼育経験年数" /> 年
-                  </li>
-                  <li class="o-form__item">
-                    <div class="o-form__heading">*飼育犬種</div>
-                    <input type="text" name="飼育犬種" />
-                  </li>
-                  <li class="o-form__item">
-                    <div class="o-form__heading">プロフィールの自己紹介</div>
-                    <textarea type="text" name="プロフィールの自己紹介" placeholder="はじめまして。今プードルと暮らしていて、2匹目のわんこを探しています。" rows="6" cols="50"></textarea>
-                    <div class="note">※いつでも変更できます。</div>
+                    <div class="o-form__heading">パスワード</div>
+                    <input type="text" name="パスワード" />
                   </li>
                 </ul>
               </section>
@@ -109,7 +53,7 @@
                 <a href="index-11.html"> 前にもどる </a>
               </div>
               <div class="a-button--type1 p-request__next">
-                <a href="index-13.html"> 次へ </a>
+                <a href="index-13.html"> 登録する </a>
               </div>
             </div>
           </main>

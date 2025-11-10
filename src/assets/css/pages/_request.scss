@@ -103,7 +103,7 @@
 }
 
 .p-request__textarea-heading {
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
 .p-request__textarea-body {
@@ -111,7 +111,10 @@
 }
 
 .p-request__textarea-check {
-  margin-top: 8px;
+  @include fz(16, 24, 0.05);
+  @include zenkaku(700);
+
+  margin-top: 16px;
 }
 
 /* リクエスト詳細 */
