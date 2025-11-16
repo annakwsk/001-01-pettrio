@@ -2,16 +2,20 @@
 @use "../shitaji" as *;
 
 .t-layout {
-  display: flex;
-  min-height: 100vh;
+  @media (--lg) {
+    display: flex;
+    min-height: 100vh;
+  }
 }
 
 .t-layout__inner {
-  @include max-width(1024px);
-  display: grid;
-  grid-template-columns: 20rem 480px 20rem;
-  margin-inline: auto;
-  justify-content: center;
+  @media (--lg) {
+    @include max-width(1024px);
+    display: grid;
+    grid-template-columns: 20rem 480px 20rem;
+    margin-inline: auto;
+    justify-content: center;
+  }
 }
 
 /* 右 */
@@ -19,8 +23,28 @@
 .t-layout__header {
   position: sticky;
   top: 0;
-  padding-right: 16px;
-  padding-top: 16px;
+
+  @media (--lg) {
+    padding-right: 16px;
+    padding-top: 16px;
+  }
+
+  @media (--md) {
+    padding: 16px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $yellow;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
 }
 
 /* 中央 */
@@ -33,17 +57,19 @@
   padding-bottom: 80px;
   height: 100%;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: $yellow;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  @media (--lg) {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $yellow;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
   }
 }
 
@@ -73,6 +99,12 @@
 /* 左 */
 
 .t-layout__footer {
-  padding-left: 16px;
-  padding-top: 80px;
+  @media (--lg) {
+    padding-left: 16px;
+    padding-top: 80px;
+  }
+
+  @media (--md) {
+    padding: 16px;
+  }
 }

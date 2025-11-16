@@ -3,9 +3,17 @@
 
 .o-footer__section {
   + .o-footer__section {
-    margin-top: 32px;
     border-top: 1px solid $gray-5;
-    padding-top: 32px;
+
+    @media (--lg) {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+
+    @media (--md) {
+      margin-top: 24px;
+      padding-top: 24px;
+    }
   }
 }
 

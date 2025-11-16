@@ -2,7 +2,9 @@
 @use "../shitaji" as *;
 
 .o-header__logo {
-  margin-bottom: 32px;
+  @media (--lg) {
+    margin-bottom: 32px;
+  }
 }
 
 /* ユーザー */
@@ -126,5 +128,90 @@
     background-image: url("../images/icon-mypage.svg");
     width: 18px;
     height: 18px;
+  }
+}
+
+.o-nav__button {
+  @media (--md) {
+    cursor: pointer;
+    position: fixed;
+    right: 16px;
+    top: 5px;
+    width: 64px;
+    height: 60px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    span {
+      display: inline-block;
+      transition: all 0.4s;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 4px;
+      border-radius: 8px;
+      background: $gray;
+      width: 38px;
+
+      &:nth-of-type(1) {
+        top: 18px;
+      }
+
+      &:nth-of-type(2) {
+        top: 31px;
+      }
+
+      &:nth-of-type(3) {
+        top: 44px;
+      }
+    }
+
+    &.is-active {
+      span {
+        &:nth-of-type(1) {
+          top: 28px;
+          transform: translateY(6px) rotate(-45deg);
+          width: 30px;
+        }
+
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+
+        &:nth-of-type(3) {
+          top: 40px;
+          transform: translateY(-6px) rotate(45deg);
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+.o-nav__body {
+  @media (--md) {
+    opacity: 0;
+    visibility: hidden;
+    background-color: $yellow-3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 16px;
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.o-header__logo-sp {
+  @media (--md) {
+    margin-bottom: 24px;
   }
 }

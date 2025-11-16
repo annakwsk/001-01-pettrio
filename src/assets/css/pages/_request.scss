@@ -54,8 +54,14 @@
 }
 
 .p-request__next {
-  max-width: 240px;
   width: 100%;
+  @media (--lg) {
+    max-width: 240px;
+  }
+
+  @media (--md) {
+    max-width: 180px;
+  }
 
   a {
     height: 64px;

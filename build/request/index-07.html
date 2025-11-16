@@ -55,23 +55,31 @@
       <img src="../assets/images/logo.svg" alt="Pettrio" />
     </a>
   </div>
-  <div class="o-header__heading">
-    <ul class="o-header__buttons">
-      <li class="a-button--type2 o-header__buttons-body">
-        <a href="">ログイン</a>
-      </li>
-      <li class="a-button--type1 o-header__buttons-body">
-        <a href=""> 会員登録 </a>
-      </li>
-    </ul>
-  </div>
   <nav class="o-nav" id="js-nav">
     <div class="o-nav__button" id="js-nav-toggle">
       <span></span>
       <span></span>
       <span></span>
     </div>
+
     <div class="o-nav__body" id="js-nav-content">
+      <div class="o-header__logo-sp hidden-lg">
+        <a href="../">
+          <img src="../assets/images/logo.svg" alt="Pettrio" />
+        </a>
+      </div>
+
+      <div class="o-header__heading">
+        <ul class="o-header__buttons">
+          <li class="a-button--type2 o-header__buttons-body">
+            <a href="">ログイン</a>
+          </li>
+          <li class="a-button--type1 o-header__buttons-body">
+            <a href=""> 会員登録 </a>
+          </li>
+        </ul>
+      </div>
+
       <ul class="o-nav__list js-nav-list">
         <li class="o-nav__home">
           <a href="../"> <i></i><span class="o-nav__ja">ホーム</span> </a>
@@ -110,7 +118,7 @@
             <div class="p-request__main">
               <div class="p-request__title">お迎え場所</div>
               <ul class="p-request__checkbox">
-                <li>
+                <li style="margin-bottom: 24px">
                   <label><input type="checkbox" name="お迎え場所" value="全国" class="js-checkbox-01" />全国</label>
                 </li>
                 <li>
