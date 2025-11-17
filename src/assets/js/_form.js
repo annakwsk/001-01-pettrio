@@ -1,114 +1,71 @@
 $(function () {
   /*  ヒント */
   function hintForm() {
-    const button = document.getElementById("button-hints");
-    let answer = document.getElementById("input-hints");
+    document.addEventListener("DOMContentLoaded", function () {
+      const messageForm = document.getElementById("message-form");
+      const messageInput = document.getElementById("message-input");
+      const messagesContainer = document.getElementById("messages");
 
-    if (!button) {
-      return false;
-    }
-    answer.focus();
+      // 初期メッセージを表示
+      addBotMessage("こんにちは！らくらくサイトのイメージキャラクター「ラク子」です。何かお手伝いできることはありますか？");
 
-    button.addEventListener("click", function () {
-      if (answer.value === String.fromCharCode(104, 105, 110, 116, 50, 48, 50, 53) || answer.value === String.fromCharCode(65352, 65353, 65358, 65364, 65298, 65296, 65298, 65301)) {
-        window.open("h.html", "_self");
-        return false;
-      } else {
-        window.open("incorrect.html", "_self");
-        return false;
+      messageForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const message = messageInput.value.trim();
+        if (message !== "") {
+          // ユーザーメッセージを表示
+          addUserMessage(message);
+          messageInput.value = "";
+
+          // ボットの返信を少し遅らせる
+          setTimeout(() => {
+            respondToMessage(message);
+          }, 1000);
+        }
+      });
+
+      function addUserMessage(text) {
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message", "user-message");
+        messageElement.textContent = text;
+        messagesContainer.appendChild(messageElement);
+        scrollToBottom();
+      }
+
+      function addBotMessage(text) {
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message", "bot-message");
+        messageElement.textContent = text;
+        messagesContainer.appendChild(messageElement);
+        scrollToBottom();
+      }
+
+      function scrollToBottom() {
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+      }
+
+      function respondToMessage(message) {
+        // 簡単な応答ロジック
+        let response;
+
+        const lowerMessage = message.toLowerCase();
+
+        if (lowerMessage.includes("こんにちは") || lowerMessage.includes("hello")) {
+          response = "こんにちは！今日はどうですか？";
+        } else if (lowerMessage.includes("ありがとう")) {
+          response = "どういたしまして！他に何かお手伝いできることはありますか？";
+        } else if (lowerMessage.includes("名前") && lowerMessage.includes("は")) {
+          response = "私はラク子です！らくらくサイトのイメージキャラクターです。";
+        } else if (lowerMessage.includes("何ができる") || lowerMessage.includes("できること")) {
+          response = "らくらくサイトについての質問に答えたり、お話し相手になったりできますよ！";
+        } else {
+          response = "なるほど、興味深いですね！もっと教えてください。";
+        }
+
+        addBotMessage(response);
       }
     });
   }
   hintForm();
-  /*  ANSWER */
-  function answerForm() {
-    const button = document.getElementById("button-answer");
-    let answer = document.getElementById("input-answer");
-
-    if (!button) {
-      return false;
-    }
-    answer.focus();
-
-    button.addEventListener("click", function () {
-      if (
-        answer.value === String.fromCharCode(12365, 12412, 12358) ||
-        answer.value === String.fromCharCode(24076, 26395) ||
-        answer.value === String.fromCharCode(12461, 12508, 12454) ||
-        answer.value === String.fromCharCode(107, 105, 98, 111, 117) ||
-        answer.value === String.fromCharCode(75, 73, 66, 79, 85) ||
-        answer.value === String.fromCharCode(65355, 65353, 65346, 65359, 65365) ||
-        answer.value === String.fromCharCode(65399, 65422, 65438, 65395)
-      ) {
-        window.open("kbu.html", "_self");
-        return false;
-      } else {
-        window.open("incorrect.html", "_self");
-        return false;
-      }
-    });
-  }
-  answerForm();
-  /*  ANSWER 謎C */
-  function answerNazoCForm() {
-    const button = document.getElementById("button-answer-nazoc");
-    let answer = document.getElementById("input-answer-nazoc");
-
-    if (!button) {
-      return false;
-    }
-
-    button.addEventListener("click", function () {
-      if (
-        answer.value === String.fromCharCode(12431, 12384, 12356) ||
-        answer.value === String.fromCharCode(35441, 38988) ||
-        answer.value === String.fromCharCode(12527, 12480, 12452) ||
-        answer.value === String.fromCharCode(119, 97, 100, 97, 105) ||
-        answer.value === String.fromCharCode(87, 65, 68, 65, 73) ||
-        answer.value === String.fromCharCode(65367, 65345, 65348, 65345, 65353) ||
-        answer.value === String.fromCharCode(65436, 65408, 65438, 65394)
-      ) {
-        window.open("wdi.html", "_self");
-        return false;
-      } else {
-        window.open("incorrect.html", "_self");
-        return false;
-      }
-    });
-  }
-  answerNazoCForm();
-
-  /*  ANSWER 最後の謎 */
-  function answerLastCForm() {
-    const button = document.getElementById("button-answer-last");
-    let answer = document.getElementById("input-answer-last");
-
-    if (!button) {
-      return false;
-    }
-
-    button.addEventListener("click", function () {
-      if (
-        answer.value === String.fromCharCode(12362, 12375, 12414, 12356) ||
-        answer.value === String.fromCharCode(12458, 12471, 12510, 12452) ||
-        answer.value === String.fromCharCode(12362, 32066, 12356) ||
-        answer.value === String.fromCharCode(12362, 20181, 33310, 12356) ||
-        answer.value === String.fromCharCode(24481, 20181, 33310, 12356) ||
-        answer.value === String.fromCharCode(111, 115, 105, 109, 97, 105) ||
-        answer.value === String.fromCharCode(79, 83, 73, 77, 65, 73) ||
-        answer.value === String.fromCharCode(111, 115, 104, 105, 109, 97, 105) ||
-        answer.value === String.fromCharCode(65359, 65363, 65352, 65353, 65357, 65345, 65353) ||
-        answer.value === String.fromCharCode(65359, 65363, 65353, 65357, 65345, 65353) ||
-        answer.value === String.fromCharCode(79, 83, 72, 73, 77, 65, 73) ||
-        answer.value === String.fromCharCode(65397, 65404, 65423, 65394)
-      ) {
-        window.open("../osmi/index.html", "_self");
-        return false;
-      } else {
-        window.open("incorrect.html", "_self");
-        return false;
-      }
-    });
-  }
-  answerLastCForm();
 });

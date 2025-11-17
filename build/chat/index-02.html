@@ -55,23 +55,6 @@
       <img src="../assets/images/logo.svg" alt="Pettrio" />
     </a>
   </div>
-  <div class="o-header__heading">
-    <div class="o-header__user">
-      <img src="../assets/images/img-user.svg" alt="Pettrio" />
-    </div>
-    <div class="o-header__name">
-      <div class="o-header__name-heading">川崎杏菜</div>
-      <div class="a-button--edit"><a href="">編集</a></div>
-    </div>
-    <div class="o-header__omukae">
-      <div class="o-header__omukae-heading">お迎え意向</div>
-      <div class="m-block-star">
-        <span class="active"></span>
-        <span class="def"></span>
-        <span class="def"></span>
-      </div>
-    </div>
-  </div>
   <nav class="o-nav" id="js-nav">
     <div class="o-nav__button" id="js-nav-toggle">
       <span></span>
@@ -79,6 +62,29 @@
       <span></span>
     </div>
     <div class="o-nav__body" id="js-nav-content">
+      <div class="o-header__logo-sp hidden-lg">
+        <a href="../">
+          <img src="../assets/images/logo.svg" alt="Pettrio" />
+        </a>
+      </div>
+      <div class="o-header__heading">
+        <div class="o-header__user">
+          <img src="../assets/images/img-user.svg" alt="Pettrio" />
+        </div>
+        <div class="o-header__name">
+          <div class="o-header__name-heading">川崎杏菜</div>
+          <div class="a-button--edit"><a href="">編集</a></div>
+        </div>
+        <div class="o-header__omukae">
+          <div class="o-header__omukae-heading">お迎え意向</div>
+          <div class="m-block-star">
+            <span class="active"></span>
+            <span class="def"></span>
+            <span class="def"></span>
+          </div>
+        </div>
+      </div>
+
       <ul class="o-nav__list js-nav-list">
         <li class="o-nav__home">
           <a href="../"> <i></i><span class="o-nav__ja">ホーム</span> </a>
@@ -113,11 +119,47 @@
                 <a href="../breeder/"><img src="../assets/images/img-user.svg" alt="" /></a>
               </div>
               <div class="p-chat-heading__user">suzuki</div>
-              <div class="p-chat-heading__report">
+              <button class="p-chat-heading__report js-modal-button" data-modal="modal-chat-report">
                 <i>
                   <img src="../assets/images/icon-report.svg" alt="" />
                 </i>
                 <span>通報</span>
+              </button>
+
+              <div class="o-modal">
+                <div class="p-chat-attention-modal js-modal o-modal__inner" id="modal-chat-report">
+                  <div class="p-top-guide__modal-inner">
+                    <div class="js-modal-close o-modal__close">
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="o-modal__content">
+                      <div class="p-chat-attention-modal__heading"><span>このブリーダーを通報する</span></div>
+                      <div class="p-chat-attention-modal__content">
+                        <p>チャット上でのルール違反や、気分を害する等の行為がありましたら、具体的な内容を記載の上、ご連絡いただけますようお願いいたします。</p>
+                        <ul class="p-chat-attention-modal__list m-list-dot">
+                          <li>個人情報の公開や依頼</li>
+                          <li>ブリーダー情報の公開や依頼</li>
+                          <li>他者への中傷行為</li>
+                          <li>見学の申込</li>
+                          <li>値段（価格）交渉</li>
+                          <li>KEEPを含む全ての成約交渉</li>
+                          <li>その他、上記目的に相応しくないと思える行為</li>
+                        </ul>
+                        <p>▼具体的な行為をご記入ください。</p>
+                        <textarea type="textarea" class="p-chat-attention-modal__textarea" rows="8" placeholder="メッセージを入力"></textarea>
+                        <p>「リクエスト」メニューから、簡単にブリーダーとの連絡を絶つことが可能です。</p>
+                        <p>誰もが気持ちよく利用できるサイトを目指しております。気分を害するようなやり取りが発生する恐れがある場合は、遠慮なくブリーダーキャンセル機能をご利用ください。</p>
+                      </div>
+                      <div>
+                        <div class="a-button--type4 p-chat-attention-modal__button">
+                          <a href="index-04.html"> 通報する </a>
+                        </div>
+                        <div class="o-modal__tojiru js-modal-close">キャンセル</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="p-chat__inner">
@@ -193,17 +235,58 @@
                         本年もどうぞよろしくお願い申し上げます。
                       </p>
                     </div>
+                    <div id="messages"></div>
                   </div>
                 </div>
               </section>
             </div>
             <div class="p-chat-bottom">
-              <form id="message-form" class="conversation-compose">
-                <input id="message-input" class="input-msg" name="input" placeholder="メッセージを入力" autocomplete="off" autofocus />
-                <button class="send" type="submit">
-                  <i class="fa fa-paper-plane"></i>
-                </button>
+              <form id="message-form" class="p-chat-bottom__form">
+                <input id="message-input" class="p-chat-bottom__msg" name="input" placeholder="メッセージを入力" autocomplete="off" autofocus />
+                <div class="p-chat-bottom__buttons">
+                  <button class="p-chat-bottom__image" type="submit">
+                    <img src="../assets/images/icon-image.svg" alt="" />
+                  </button>
+                  <button class="p-chat-bottom__send" type="submit">
+                    <img src="../assets/images/icon-send.svg" alt="" />
+                  </button>
+                </div>
               </form>
+            </div>
+            <div class="p-request__button">
+              <div class="a-button--type1 p-request__next">
+                <a href="index-02.html"> 見学お申し込み </a>
+              </div>
+              <div class="p-request__back">
+                <button data-modal="modal-chat-miokuri" class="js-modal-button">見送り</button>
+              </div>
+            </div>
+
+            <div class="o-modal">
+              <div class="p-chat-attention-modal js-modal o-modal__inner" id="modal-chat-miokuri">
+                <div class="p-top-guide__modal-inner">
+                  <div class="js-modal-close o-modal__close">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="o-modal__content">
+                    <div class="p-chat-attention-modal__heading"><span>お客様のリクエストから、このブリーダーを見送りますか？</span></div>
+                    <div class="p-chat-attention-modal__content">
+                      <p>
+                        このブリーダーからの提案を見送ります。<br />
+                        見送り後は本提案が削除されますが、よろしいでしょうか？
+                      </p>
+                      <p>※お客様との条件等が明らかに合わない場合は、遠慮なく見送りをおすすめします。</p>
+                    </div>
+                    <div>
+                      <div class="a-button--type4 p-chat-attention-modal__button">
+                        <a href="index-03.html"> 見送る </a>
+                      </div>
+                      <div class="o-modal__tojiru js-modal-close">キャンセル</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </main>
         </div>

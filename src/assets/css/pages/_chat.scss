@@ -1,6 +1,14 @@
 @use "sass:math";
 @use "../shitaji" as *;
 
+.p-chat {
+  position: relative;
+}
+
+.p-chat-cancel {
+  padding: 0 16px;
+}
+
 .p-chat-attention {
   width: 188px;
   margin: 0 16px 16px auto;
@@ -115,10 +123,27 @@
   margin: 16px 0;
 }
 
+.p-chat-attention-modal__button {
+  @include max-width(320px);
+
+  margin-top: 24px;
+
+  a {
+    height: 64px;
+  }
+}
+
+.p-chat-attention-modal__textarea {
+  width: 100%;
+  padding: 8px;
+}
+
 /* 個別 */
 
 .p-chat__inner {
   @include padding;
+
+  margin-bottom: 16px;
 }
 
 .p-chat-heading {
@@ -207,7 +232,38 @@
 .p-chat-bottom {
   @include bg($white);
 
+  margin-bottom: 24px;
+
+  form {
+    width: 100%;
+  }
+}
+
+.p-chat-bottom__form {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding: 8px;
+  background: $white;
+  border-top: 1px solid $gray-5;
+}
+
+.p-chat-bottom__msg {
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: $gray-6;
+  outline: none;
+}
+
+.p-chat-bottom__buttons {
+  @include flex(space-between, center, nowrap);
+}
+
+.p-chat-bottom__image {
+  border-right: 1px solid $gray-5;
+  margin-right: 16px;
+  padding-right: 16px;
 }

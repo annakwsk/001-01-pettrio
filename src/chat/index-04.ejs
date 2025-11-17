@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'チャット'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper t-layout">
+      <div class="t-layout__inner">
+        <%- include("../_header-login"); %>
+        <div class="t-layout__content">
+          <main class="p-chat-cancel">
+            <!-- heading -->
+            <div class="t-layout__heading">
+              <a href="index.html"><i></i> </a>
+              <div class="t-layout__heading-title">チャット</div>
+            </div>
+            <!-- /heading -->
+            <div class="m-block-fix">
+              <div class="m-block-fix__heading">
+                <i></i>
+                <span> 通報を受け付けました </span>
+              </div>
+              <div class="m-block-fix__body">
+                <p>ご気分を害したことにお詫びするとともに、当サイトポリシーにご協力いただけたこと、感謝申し上げます。</p>
+                <p>内容を調査し、改めて弊社よりご連絡を差し上げる場合がありますので、その際はどうぞ宜しくお願い申し上げます。</p>
+              </div>
+            </div>
+
+            <div class="p-request__button">
+              <div class="a-button--type2 p-request__next">
+                <a href="index.html"> チャットへ </a>
+              </div>
+            </div>
+          </main>
+        </div>
+        <%- include("../_footer"); %>
+      </div>
+    </div>
+  </body>
+</html>
