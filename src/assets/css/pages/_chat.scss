@@ -5,7 +5,7 @@
   width: 188px;
   margin: 0 16px 16px auto;
 
-  a {
+  button {
     @include bg($yellow);
     @include zenmaru;
     @include fz(14, 14, 0.05);
@@ -83,6 +83,36 @@
   flex-direction: column;
   align-items: center;
   row-gap: 8px;
+}
+
+/* チャットでの禁止事項 */
+
+.p-chat-attention-modal__heading {
+  @include flex(center, center, nowrap);
+  column-gap: 8px;
+  margin-bottom: 16px;
+
+  i {
+    display: block;
+    background-image: url("../images/icon-attention.svg");
+    width: 18px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  span {
+    @include zenmaru;
+    @include fz(18, 24, 0.05);
+  }
+}
+
+.p-chat-attention-modal__content {
+  @include fz(14, 24, 0.05);
+}
+
+.p-chat-attention-modal__list {
+  margin: 16px 0;
 }
 
 /* 個別 */

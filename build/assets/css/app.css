@@ -1638,6 +1638,12 @@ p + p {
   padding: 8px 16px;
   border-radius: 24px;
 }
+.m-list-dot li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
 .o-accordion {
   border-bottom: 1px solid #F9DB00;
 }
@@ -2049,11 +2055,71 @@ p + p {
 .o-profile__text {
   margin-top: 24px;
 }
+.o-modal__inner {
+  background-color: rgba(66, 66, 66, 0.6);
+  padding: 80px 0 40px;
+  height: 100%;
+}
+.o-modal__close {
+  cursor: pointer;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  position: absolute;
+  right: 16px;
+  top: -1px;
+  width: 30px;
+  height: 30px;
+}
+.o-modal__close span {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  width: 38px;
+}
+.o-modal__close span:nth-of-type(1) {
+  top: 28px;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+  transform: translateY(6px) rotate(-45deg);
+  width: 30px;
+}
+.o-modal__close span:nth-of-type(2) {
+  top: 40px;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+  transform: translateY(-6px) rotate(45deg);
+  width: 30px;
+}
+.o-modal__content {
+  background-color: #ffffff;
+  border: 2px #F9DB00 solid;
+  border-radius: 16px;
+  padding: 24px 4.7058823529%;
+  margin: 0 6.4%;
+}
+@media (min-width: 769px) {
+  .o-modal__content {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.o-modal__tojiru {
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 24px;
+}
+.o-modal__tojiru:hover {
+  text-decoration: none;
+}
 .p-chat-attention {
   width: 188px;
   margin: 0 16px 16px auto;
 }
-.p-chat-attention a {
+.p-chat-attention button {
   background-color: #F9DB00;
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 700;
@@ -2138,6 +2204,48 @@ p + p {
   -ms-flex-align: center;
   align-items: center;
   row-gap: 8px;
+}
+/* チャットでの禁止事項 */
+.p-chat-attention-modal__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-column-gap: 8px;
+  -moz-column-gap: 8px;
+  column-gap: 8px;
+  margin-bottom: 16px;
+}
+.p-chat-attention-modal__heading i {
+  display: block;
+  background-image: url("../images/icon-attention.svg");
+  width: 18px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p-chat-attention-modal__heading span {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0.05em;
+}
+.p-chat-attention-modal__content {
+  font-size: 1.4rem;
+  line-height: 1.7142857143;
+  letter-spacing: 0.05em;
+}
+.p-chat-attention-modal__list {
+  margin: 16px 0;
 }
 /* 個別 */
 .p-chat__inner {
