@@ -1,0 +1,11 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.m-list-dot {
+  li {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+}
