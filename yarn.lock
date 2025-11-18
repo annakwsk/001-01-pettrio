@@ -6318,6 +6318,11 @@ normalize-url@2.0.1, normalize-url@^2.0.1:
     query-string "^5.0.1"
     sort-keys "^2.0.0"
 
+nouislider@^15.8.1:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/nouislider/-/nouislider-15.8.1.tgz#18729ed29738d2d328a1b5e0429d38eb8be8a696"
+  integrity sha512-93TweAi8kqntHJSPiSWQ1o/uZ29VWOmal9YKb6KKGGlCkugaNfAupT7o1qTHqdJvNQ7S0su5rO6qRFCjP8fxtw==
+
 now-and-later@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/now-and-later/-/now-and-later-2.0.1.tgz"

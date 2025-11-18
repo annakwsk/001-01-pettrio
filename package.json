@@ -50,7 +50,8 @@
     "browserslist": "^4.20.4",
     "caniuse-lite": "^1.0.30001357",
     "get-google-fonts": "^1.2.2",
-    "inview": "^0.0.15"
+    "inview": "^0.0.15",
+    "nouislider": "^15.8.1"
   },
   "scripts": {
     "dev": "gulp dev",

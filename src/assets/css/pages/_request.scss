@@ -44,9 +44,6 @@
   }
 }
 
-.p-request__radio {
-}
-
 .p-request__button {
   @include flex(center, center, nowrap);
 
@@ -121,6 +118,10 @@
   @include zenkaku(700);
 
   margin-top: 16px;
+}
+
+.noUi-connect {
+  background: $yellow;
 }
 
 /* リクエスト詳細 */

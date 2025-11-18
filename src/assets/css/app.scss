@@ -8,6 +8,7 @@
 @use "templates";
 
 @import "swiper/swiper-bundle.css";
+@import "../../../node_modules/nouislider/dist/nouislider.min.css";
 
 .hidden-lg {
   @media (--lg) {

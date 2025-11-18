@@ -1,72 +1,31 @@
-// import Swiper, { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
-import Swiper from "swiper";
-import { Autoplay } from "swiper/modules";
+import noUiSlider from "nouislider";
 
-export default function Slider() {
-  window.addEventListener("load", function () {
-    initSwiper(); // ページ読み込み後に初期化
+export default function initNoUiSlider() {
+  // ← 関数名を変更
+  const slider = document.getElementById("js-slider-budget");
+  const output = document.getElementById("js-price-output");
+  const minHidden = document.getElementById("minHidden");
+  const maxHidden = document.getElementById("maxHidden");
+
+  noUiSlider.create(slider, {
+    start: [10, 100], // 初期値（万円単位）
+    connect: true,
+    range: {
+      min: 0,
+      max: 300,
+    },
+    step: 10, // 10万円単位
+    format: {
+      to: (value) => Math.round(value),
+      from: (value) => Number(value),
+    },
   });
 
-  const breakPoint = 768; // ブレークポイントを設定
-  let swiper;
-  let swiperBool;
-
-  window.addEventListener(
-    "load",
-    () => {
-      if (breakPoint < window.innerWidth) {
-        swiperBool = false;
-      } else {
-        createIntroSwiper();
-        createHowtoSwiper();
-        swiperBool = true;
-      }
-    },
-    false
-  );
-
-  window.addEventListener(
-    "resize",
-    () => {
-      if (breakPoint < window.innerWidth && swiperBool) {
-        swiper.destroy(false, true);
-        swiperBool = false;
-      } else if (breakPoint >= window.innerWidth && !swiperBool) {
-        createIntroSwiper();
-        createHowtoSwiper();
-        swiperBool = true;
-      }
-    },
-    false
-  );
-
-  const createIntroSwiper = () => {
-    swiper = new Swiper(".js-slider-intro", {
-      modules: [Autoplay],
-      slidesPerView: "auto",
-      spaceBetween: 8,
-      loop: true,
-      speed: 8000,
-      loopedSlides: 2,
-      allowTouchMove: false,
-      watchSlidesProgress: true,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-      },
-      freeMode: {
-        enabled: true,
-        momentum: false,
-      },
-    });
-  };
-
-  const createHowtoSwiper = () => {
-    swiper = new Swiper(".js-slider-howto", {
-      spaceBetween: 6,
-      loop: false,
-      speed: 1000,
-      watchSlidesProgress: true,
-    });
-  };
+  slider.noUiSlider.on("update", function (values) {
+    const min = values[0];
+    const max = values[1];
+    output.textContent = `${min}万円 ～ ${max}万円`;
+    minHidden.value = min;
+    maxHidden.value = max;
+  });
 }

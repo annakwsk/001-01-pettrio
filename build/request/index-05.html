@@ -116,20 +116,14 @@
             </div>
             <div class="p-request__main">
               <div class="p-request__title">ご予算</div>
-              <ul class="p-request__checkbox">
-                <li>
-                  <label><input type="checkbox" name="毛色-1" value="赤" class="js-checkbox-01" />赤</label>
-                </li>
-                <li>
-                  <label><input type="checkbox" name="毛色-2" value="茶" class="js-checkbox-01" />茶</label>
-                </li>
-                <li>
-                  <label><input type="checkbox" name="毛色-3" value="グレー" class="js-checkbox-01" />グレー</label>
-                </li>
-                <li>
-                  <label><input type="checkbox" name="毛色-4" value="黒" class="js-checkbox-01" />黒</label>
-                </li>
-              </ul>
+              <div id="js-slider-budget"></div>
+              <div class="p-request-output" id="js-price-output">10万円 ～ 100万円</div>
+
+              <form id="priceForm" action="/search" method="get">
+                <input type="hidden" name="min" id="minHidden" value="100" />
+                <input type="hidden" name="max" id="maxHidden" value="500" />
+                <button type="submit">検索</button>
+              </form>
             </div>
 
             <div class="p-request__button">
