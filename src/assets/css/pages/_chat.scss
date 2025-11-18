@@ -42,9 +42,6 @@
   border-bottom: 1px solid $gray-5;
   margin: 0;
 
-  + .p-chat-list__item {
-  }
-
   &:first-child {
     border-top: 1px solid $gray-5;
   }
@@ -67,9 +64,6 @@
   grid-template-columns: 40px 1fr 40px;
   align-items: flex-start;
   column-gap: 16px;
-}
-
-.p-chat-list__content {
 }
 
 .p-chat-list__user {
@@ -168,8 +162,6 @@
   row-gap: 8px;
   cursor: pointer;
 
-  i {
-  }
   span {
     @include fz(12, 12, 0.03);
 
@@ -194,9 +186,6 @@
   + .p-chat-section__content {
     margin-top: 8px;
   }
-}
-
-.p-chat-section__body {
 }
 
 .p-chat-section__text {
