@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="format-detection" content="telephone=no" />
-<title>リクエスト｜【公式】ペトリオ</title>
+<title>ログイン｜【公式】ペトリオ</title>
 <!-- ogp -->
 <meta property="og:site_name" content="【公式】ペトリオ" />
 <meta property="og:title" content="【公式】ペトリオ" />
@@ -85,32 +85,40 @@
 </header>
 
         <div class="t-layout__content">
-          <!-- heading -->
-          <div class="t-layout__heading">
-            <div class="t-layout__heading-title">条件リクエスト</div>
-          </div>
-          <!-- /heading -->
-
-          <main class="p-request">
-            <div class="m-block-fix">
-              <div class="m-block-fix__heading">
-                <i></i>
-                <span> ご登録ありがとうございます。 </span>
-              </div>
-              <div class="m-block-fix__image">
-                <img src="../assets/images/img-fix-request.png" alt="" />
-              </div>
-              <div class="m-block-fix__body">
-                <p>お客様のリクエスト（ご希望のペット情報）を、ブリーダーに送信いたしました。現在、リクエスト内容に対応可能なブリーダーからのエントリーを募集しております。</p>
-                <p>エントリーがあり次第、「お知らせ」メニューにてご案内いたします。</p>
-                <p>少しお時間をいただく場合もございますが、どうぞ楽しみにお待ちください。</p>
-              </div>
+          <main class="p-login">
+            <!-- heading -->
+            <div class="t-layout__heading">
+              <a href="../"><i></i> </a>
+              <div class="t-layout__heading-title">ログイン</div>
             </div>
-
-            <div class="p-request__button">
-              <div class="a-button--type2 p-request__next">
-                <a href=""> トップページへ </a>
-              </div>
+            <!-- /heading -->
+            <div>
+              <div class="p-login__heading">会員の方はこちら</div>
+              <section class="p-request__section o-form p-login__form">
+                <ul class="p-request__section-list">
+                  <li class="o-form__item">
+                    <div class="o-form__heading">メールアドレス</div>
+                    <input
+                      type="email"
+                      name="メールアドレス"
+                      style="ime-mode: disabled"
+                      pattern=".+@.+\..+"
+                      title="メールアドレスは、aaa@example.com のような形式で記入してください。"
+                      autocomplete="email"
+                    />
+                  </li>
+                  <li class="o-form__item">
+                    <div class="o-form__heading">パスワード</div>
+                    <input type="text" name="パスワード" />
+                  </li>
+                  <li class="p-login__form-note">
+                    <a href="" class="link">パスワードを忘れた方はこちら（再設定）</a>
+                  </li>
+                </ul>
+                <div class="a-button--type1 p-login__form-button">
+                  <a href="../mypage/">ログインする</a>
+                </div>
+              </section>
             </div>
           </main>
         </div>

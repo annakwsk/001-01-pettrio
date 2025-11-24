@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% const baseMeta = {title: 'ログイン'} %>
+  <head>
+    <%- include("../_head", {baseMeta: baseMeta}); %>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3K63C" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper t-layout">
+      <div class="t-layout__inner">
+        <%- include("../_header"); %>
+        <div class="t-layout__content">
+          <main class="p-login">
+            <!-- heading -->
+            <div class="t-layout__heading">
+              <a href="../"><i></i> </a>
+              <div class="t-layout__heading-title">ログイン</div>
+            </div>
+            <!-- /heading -->
+            <div>
+              <div class="p-login__heading">会員の方はこちら</div>
+              <section class="p-request__section o-form p-login__form">
+                <ul class="p-request__section-list">
+                  <li class="o-form__item">
+                    <div class="o-form__heading">メールアドレス</div>
+                    <input
+                      type="email"
+                      name="メールアドレス"
+                      style="ime-mode: disabled"
+                      pattern=".+@.+\..+"
+                      title="メールアドレスは、aaa@example.com のような形式で記入してください。"
+                      autocomplete="email"
+                    />
+                  </li>
+                  <li class="o-form__item">
+                    <div class="o-form__heading">パスワード</div>
+                    <input type="text" name="パスワード" />
+                  </li>
+                  <li class="p-login__form-note">
+                    <a href="" class="link">パスワードを忘れた方はこちら（再設定）</a>
+                  </li>
+                </ul>
+                <div class="a-button--type1 p-login__form-button">
+                  <a href="../mypage/">ログインする</a>
+                </div>
+              </section>
+            </div>
+          </main>
+        </div>
+        <%- include("../_footer"); %>
+      </div>
+    </div>
+  </body>
+</html>

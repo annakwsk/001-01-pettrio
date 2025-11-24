@@ -1,0 +1,28 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.p-login__heading {
+  @include bg($yellow);
+  @include zenkaku(700);
+
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.p-login__form {
+  @include padding;
+}
+
+.p-login__form-button {
+  margin-top: 40px;
+
+  a {
+    height: 64px;
+  }
+}
+
+.p-login__form-note {
+  @include fz(12, 20, 0.05);
+
+  margin-top: 16px;
+}

@@ -2746,6 +2746,30 @@ p + p {
 .p-mypage-nav__section + .p-mypage-nav__section {
   margin-top: 40px;
 }
+.p-login__heading {
+  background-color: #F9DB00;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.p-login__form {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.p-login__form-button {
+  margin-top: 40px;
+}
+.p-login__form-button a {
+  height: 64px;
+}
+.p-login__form-note {
+  font-size: 1.2rem;
+  line-height: 1.6666666667;
+  letter-spacing: 0.05em;
+  margin-top: 16px;
+}
 /* Mainvisual */
 .p-top-mv {
   background-color: #FFFFF8;
