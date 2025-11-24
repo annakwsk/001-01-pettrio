@@ -1033,6 +1033,7 @@ progress {
   border: 0;
 }
 /* flex */
+/* grid */
 /* background-color */
 /* padding */
 /* border */
@@ -1106,6 +1107,9 @@ p + p {
 }
 .underline {
   text-decoration: underline;
+}
+.bold {
+  font-weight: 700;
 }
 .note {
   font-size: 1.2rem;
@@ -1668,6 +1672,13 @@ p + p {
   list-style-position: inside;
   text-indent: -1em;
   padding-left: 1em;
+}
+.m-list-flex li {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
 }
 .o-accordion {
   border-bottom: 1px solid #F9DB00;
@@ -2960,6 +2971,54 @@ p + p {
   font-style: normal;
   margin-bottom: 24px;
   margin-top: 40px;
+}
+.p-other__inner {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.p-other-intro {
+  margin-bottom: 40px;
+}
+.p-other__list {
+  font-size: 1.4rem;
+  line-height: 1.4285714286;
+  letter-spacing: 0.05em;
+}
+.p-other-section + .p-other-section {
+  margin-top: 40px;
+}
+.p-other-section__heading {
+  margin-bottom: 24px;
+}
+.p-other-section__note {
+  margin-top: 16px;
+}
+/* Amazon */
+.p-other-gift {
+  margin-bottom: 64px;
+}
+.p-other-gift__list {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.p-other-gift__list li {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 8px;
+}
+.p-other-gift__list li:first-child {
+  border-top: 1px solid #E0E0E0;
+}
+.p-other-gift__list-heading {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.p-other-gift__list-left {
+  color: #A89926;
+}
+.p-other-gift__attention {
+  margin-top: 40px;
+  margin-bottom: 16px;
 }
 .p-policy__inner {
   padding-left: 16px;

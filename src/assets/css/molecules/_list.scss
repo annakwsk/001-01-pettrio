@@ -9,3 +9,11 @@
     padding-left: 1em;
   }
 }
+
+.m-list-flex {
+  li {
+    @include grid;
+
+    column-gap: 16px;
+  }
+}

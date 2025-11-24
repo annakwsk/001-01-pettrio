@@ -103,6 +103,13 @@ $sp: 1024px;
   flex-wrap: $flex-wrap;
 }
 
+/* grid */
+
+@mixin grid($columns: 200px) {
+  display: grid;
+  grid-template-columns: $columns 1fr;
+}
+
 /* background-color */
 
 @mixin bg($color: $yellow) {

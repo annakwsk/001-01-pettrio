@@ -1,0 +1,61 @@
+@use "sass:math";
+@use "../shitaji" as *;
+
+.p-other__inner {
+  @include padding;
+}
+
+.p-other-intro {
+  margin-bottom: 40px;
+}
+
+.p-other__list {
+  @include fz(14, 20, 0.05);
+}
+
+.p-other-section {
+  + .p-other-section {
+    margin-top: 40px;
+  }
+}
+
+.p-other-section__heading {
+  margin-bottom: 24px;
+}
+
+.p-other-section__note {
+  margin-top: 16px;
+}
+
+/* Amazon */
+
+.p-other-gift {
+  margin-bottom: 64px;
+}
+
+.p-other-gift__list {
+  margin-top: 40px;
+  margin-bottom: 16px;
+
+  li {
+    border-bottom: 1px solid $gray-5;
+    padding: 8px;
+
+    &:first-child {
+      border-top: 1px solid $gray-5;
+    }
+  }
+}
+
+.p-other-gift__list-heading {
+  @include zenmaru;
+}
+
+.p-other-gift__list-left {
+  color: $yellow-2;
+}
+
+.p-other-gift__attention {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}

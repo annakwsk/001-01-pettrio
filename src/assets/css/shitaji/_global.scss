@@ -67,6 +67,10 @@ p {
   text-decoration: underline;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .note {
   @include fz(12, 20, 0.03);
 }
