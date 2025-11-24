@@ -1,2 +1,207 @@
 @use "sass:math";
 @use "../shitaji" as *;
+
+/* Mainvisual */
+
+.p-top-mv {
+  @include bg($yellow-3);
+
+  padding: 16px 16px 64px;
+}
+
+.p-top-mv__top {
+  @include flex(space-between, center, nowrap);
+}
+
+.p-top-mv__middle {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.p-top-mv__middle-logo {
+  @include max-width(320px);
+
+  margin-bottom: 24px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-top-mv__middle-text {
+  @include zenkaku(700);
+  @include fz(18, 24, 0.05);
+}
+
+.p-top-mv__bottom {
+  @include flex(space-between, flex-end, nowrap);
+
+  margin-bottom: 24px;
+}
+
+.p-top-mv__intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.p-top-mv__button {
+  a {
+    height: 64px;
+  }
+}
+
+/* Flow */
+
+.p-top-flow {
+  padding: 64px 16px;
+}
+
+.p-top-flow__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 16px;
+  margin-top: 40px;
+}
+
+.p-top-flow__step {
+  @include titan;
+
+  margin-bottom: 16px;
+
+  span {
+    display: block;
+    text-align: center;
+
+    &:first-child {
+      @include fz(18, 18, 0.05);
+    }
+
+    &:last-child {
+      @include fz(40, 40, 0.05);
+    }
+  }
+}
+
+.p-top-flow__image {
+  @include flex(center, center, nowrap);
+
+  height: 190px;
+  position: relative;
+  margin-bottom: 16px;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: $yellow;
+    width: 180px;
+    height: 180px;
+    border-radius: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.p-top-flow__body {
+  text-align: center;
+
+  h3 {
+    @include fz(16, 24, 0.05);
+
+    margin-bottom: 8px;
+  }
+
+  p {
+    @include fz(14, 24, 0.05);
+  }
+}
+
+/* 特典 */
+
+.p-top-tokuten {
+  @include bg($yellow-3);
+
+  padding: 64px 16px;
+}
+
+.p-top-tokuten__image {
+  @include max-width(120px);
+
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.p-top-tokuten__item {
+  + .p-top-tokuten__item {
+    margin-top: 40px;
+  }
+}
+
+.p-top-tokuten__intro {
+  margin-bottom: 40px;
+}
+
+.p-top-tokuten__intro-heading {
+  @include fz(18, 24, 0.05);
+  @include zenmaru;
+
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.p-top-tokuten__intro-body {
+  text-align: center;
+}
+
+.p-top-tokuten__list {
+  margin-bottom: 24px;
+}
+
+.p-top-tokuten__number {
+  text-align: center;
+
+  span {
+    display: block;
+    color: $yellow-2;
+
+    &:first-child {
+      @include zenkaku(700);
+      @include fz(14, 14, 0.05);
+    }
+
+    &:last-child {
+      @include titan;
+      @include fz(40, 40, 0.05);
+    }
+  }
+}
+
+.p-top-tokuten__heading {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  column-gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.p-top-tokuten__heading-text {
+  @include zenmaru;
+  @include fz(18, 24, 0.05);
+
+  color: $yellow-2;
+}
+
+.p-top-tokuten__text {
+  @include fz(14, 24, 0.05);
+}
+
+.p-top-tokuten__about-heading {
+  @include fz(18, 24, 0.05);
+  @include zenkaku(700);
+
+  margin-bottom: 24px;
+  margin-top: 40px;
+}

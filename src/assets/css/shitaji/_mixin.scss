@@ -45,6 +45,12 @@ $sp: 1024px;
   font-style: normal;
 }
 
+@mixin titan {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @mixin bold {
   font-weight: bold;
 }

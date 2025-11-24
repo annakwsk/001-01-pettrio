@@ -1254,19 +1254,6 @@ p + p {
 .of-h {
   overflow: hidden;
 }
-.o-footer-share,
-.p-top-intro__button,
-.p-top-howto__slider li:not(:first-child)::before,
-.p-top-hero__deco-03,
-.p-top-hero__deco-04,
-.p-top-hero__deco-05,
-.p-top-read__text,
-.p-top-read__metro,
-.ticketWrap .naviBox .nextBtn,
-.ticketWrap .naviBox .prevBtn,
-.p-top-ticketinfo__button,
-.p-top-read__block-01,
-.p-top-read__block-02,
 .p-top-read__block-03 {
   z-index: 1 !important;
 }
@@ -1276,37 +1263,16 @@ p + p {
 .o-header {
   z-index: 3;
 }
-.o-nav__body.is-active,
-.o-footer-share__bg {
+.o-nav__body.is-active {
   z-index: 8;
 }
-.o-nav__button,
-.o-footer-share__inner,
-.o-footer-share {
+.o-nav__button {
   z-index: 10;
 }
-.p-top-catch__block::before,
-.p-top-hero__deco-01,
-.p-top-hero__image::before,
-.p-top-hero__image::after {
+.p-top-catch__block::before {
   z-index: 0;
 }
-.p-top-howto__slider ul,
-.p-top-howto__slider li,
-.p-top-read__deco-01,
-.p-top-read__deco-02,
-.p-top-read__deco-03,
-.p-top-read__deco-04,
-.p-top-read__deco-05,
-.p-top-read__deco-06,
-.p-top-read__deco-07,
-.p-top-read__deco-08,
-.p-top-read__deco-09,
-.p-top-read__deco-10,
-.p-top-read__deco-11,
-.p-top-read__deco-12,
-.p-top-read__deco-13,
-.p-top-read__deco-14 {
+.p-top-flow__image::after {
   z-index: -1;
 }
 .a-button--edit {
@@ -1521,6 +1487,11 @@ p + p {
   line-height: 1.2;
   letter-spacing: 0.05em;
   text-align: center;
+}
+.a-heading-zenmaru {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .a-icon {
   background-color: #F9DB00;
@@ -2762,6 +2733,232 @@ p + p {
   background-repeat: no-repeat;
 }
 .p-mypage-nav__section + .p-mypage-nav__section {
+  margin-top: 40px;
+}
+/* Mainvisual */
+.p-top-mv {
+  background-color: #FFFFF8;
+  padding: 16px 16px 64px;
+}
+.p-top-mv__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.p-top-mv__middle {
+  text-align: center;
+  margin-top: 16px;
+}
+.p-top-mv__middle-logo {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+.p-top-mv__middle-logo img {
+  width: 100%;
+}
+.p-top-mv__middle-text {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0.05em;
+}
+.p-top-mv__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-bottom: 24px;
+}
+.p-top-mv__intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.p-top-mv__button a {
+  height: 64px;
+}
+/* Flow */
+.p-top-flow {
+  padding: 64px 16px;
+}
+.p-top-flow__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 16px;
+  margin-top: 40px;
+}
+.p-top-flow__step {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 16px;
+}
+.p-top-flow__step span {
+  display: block;
+  text-align: center;
+}
+.p-top-flow__step span:first-child {
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.p-top-flow__step span:last-child {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.p-top-flow__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 190px;
+  position: relative;
+  margin-bottom: 16px;
+}
+.p-top-flow__image::after {
+  content: "";
+  display: block;
+  background-color: #F9DB00;
+  width: 180px;
+  height: 180px;
+  border-radius: 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.p-top-flow__body {
+  text-align: center;
+}
+.p-top-flow__body h3 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+.p-top-flow__body p {
+  font-size: 1.4rem;
+  line-height: 1.7142857143;
+  letter-spacing: 0.05em;
+}
+/* 特典 */
+.p-top-tokuten {
+  background-color: #FFFFF8;
+  padding: 64px 16px;
+}
+.p-top-tokuten__image {
+  max-width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.p-top-tokuten__item + .p-top-tokuten__item {
+  margin-top: 40px;
+}
+.p-top-tokuten__intro {
+  margin-bottom: 40px;
+}
+.p-top-tokuten__intro-heading {
+  font-size: 1.8rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0.05em;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.p-top-tokuten__intro-body {
+  text-align: center;
+}
+.p-top-tokuten__list {
+  margin-bottom: 24px;
+}
+.p-top-tokuten__number {
+  text-align: center;
+}
+.p-top-tokuten__number span {
+  display: block;
+  color: #A89926;
+}
+.p-top-tokuten__number span:first-child {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.p-top-tokuten__number span:last-child {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.p-top-tokuten__heading {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  -webkit-column-gap: 8px;
+  -moz-column-gap: 8px;
+  column-gap: 8px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.p-top-tokuten__heading-text {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0.05em;
+  color: #A89926;
+}
+.p-top-tokuten__text {
+  font-size: 1.4rem;
+  line-height: 1.7142857143;
+  letter-spacing: 0.05em;
+}
+.p-top-tokuten__about-heading {
+  font-size: 1.8rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0.05em;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 24px;
   margin-top: 40px;
 }
 .p-policy__inner {
